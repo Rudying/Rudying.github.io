@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://yoursite.com/"/>
-  <updated>2019-07-28T11:51:06.588Z</updated>
+  <updated>2019-07-30T16:33:50.622Z</updated>
   <id>http://yoursite.com/</id>
   
   <author>
@@ -15,6 +15,60 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>blog更新日志</title>
+    <link href="http://yoursite.com/2019/07/30/test1/"/>
+    <id>http://yoursite.com/2019/07/30/test1/</id>
+    <published>2019-07-30T15:59:33.000Z</published>
+    <updated>2019-07-30T16:33:50.622Z</updated>
+    
+    <content type="html"><![CDATA[<h3 id="删除部分"><a href="#删除部分" class="headerlink" title="删除部分"></a>删除部分</h3><ol><li><p>删除在线聊天功能</p></li><li><p>删除文章阴影和动态背景canvas</p></li><li></li></ol><h3 id="增加部分"><a href="#增加部分" class="headerlink" title="增加部分"></a>增加部分</h3><ol><li>博客评论功能</li><li>侧栏链接</li><li>网站标识icon</li></ol><h3 id="预增部分"><a href="#预增部分" class="headerlink" title="预增部分"></a>预增部分</h3><ol><li>访客数和访问量统计</li><li>评论头像设置</li></ol>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;h3 id=&quot;删除部分&quot;&gt;&lt;a href=&quot;#删除部分&quot; class=&quot;headerlink&quot; title=&quot;删除部分&quot;&gt;&lt;/a&gt;删除部分&lt;/h3&gt;&lt;ol&gt;
+&lt;li&gt;&lt;p&gt;删除在线聊天功能&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;删除文章阴影和动态背景canvas&lt;/p&gt;
+&lt;/li&gt;
+      
+    
+    </summary>
+    
+      <category term="日常生活" scheme="http://yoursite.com/categories/%E6%97%A5%E5%B8%B8%E7%94%9F%E6%B4%BB/"/>
+    
+    
+  </entry>
+  
+  <entry>
+    <title>【转载】</title>
+    <link href="http://yoursite.com/2019/07/30/test/"/>
+    <id>http://yoursite.com/2019/07/30/test/</id>
+    <published>2019-07-30T15:59:30.000Z</published>
+    <updated>2019-07-30T16:15:06.756Z</updated>
+    
+    <content type="html"><![CDATA[<blockquote class="blockquote-center"><p> 人的一切痛苦，本质上都是对自己无能的愤怒</p><p><strong>王小波</strong></p></blockquote><p>当代流传着这么一句话：<strong>“男生不可不读王小波，女生不可不读周国平。”</strong></p><p>王小波的作品以其文采和哲思赢得了无数读者的青睐，无论花季还是老年，都能从他的文字中收获智慧和超然。</p><p>王小波，中国当代学者、作家。代表作品有《黄金时代》《白银时代》《青铜时代》《黑铁时代》等。他仅创作的一部电影剧本《东宫西宫》，就获得了阿根廷国际电影节最佳编剧奖，并且入围1997年戛纳国际电影节。</p><p>在王小波的众多作品中，最吸引我的，就是他的《白银时代》。</p><p>翻开王小波《白银时代》的第一页，大学二年级热力学课老师正在课室上讲道：“将来的世界是银子的”。</p><p>自此，王小波便以一个独特的视角，在白银时代这个虚拟时空里作了一个关于未来世界的黑色预言。</p><p><strong>希腊神话里说，白银时代的人蒙神恩宠，终身不会衰老，也不会为生计所迫，他们没有痛苦没有忧虑，一直到死，相貌和心灵都像儿童。死掉以后，他们的幽灵还会在尘世上游荡。</strong></p><p>然而他所表现的白银世界却与神话中的乌托邦理想国大相径庭甚至是截然相反。</p><p>这是个在两个时空下同时进行的故事，一个是大二的学生时代，一个是2020年步入写作公司的职业时代。在作者眼里，它们都是白银时代，在同质化基础上构建起来的一个压抑自我和人性的强权社会。</p><p>这是个师生恋的故事。主人公被刻画成了一个受虐者，被倒挂，被钉十字架，如耶稣受难日那天般被折磨。我们在阅读之余，不禁惊叹王小波的世界，那深不见底的内涵。</p><p>王小波变幻莫测的文风，体现了现实对人的折磨，但不苦闷，也不压抑，自然流畅的文字为人们解读了现实中不可言喻的道理。</p><p>在故事中，有一句话不断被重复——“世界是银色的”。我们可以想象一下，整个世界都是灰蒙蒙的银色，看不到未来，主人公在银色的世界里被镀成了一个银色的雕塑，压抑、沉闷。</p><p>他的白银时代一些人说看不懂，一会儿是“我”坐在写字楼里写文章，一会儿又回到了师生恋，王小波的文章总是在这虚虚实实真真假假中，把读者绕进去。</p>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;blockquote class=&quot;blockquote-center&quot;&gt;&lt;p&gt; 人的一切痛苦，本质上都是对自己无能的愤怒&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;王小波&lt;/strong&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;当代流传着这么一句话：&lt;strong&gt;“男生不可不读王
+      
+    
+    </summary>
+    
+      <category term="日常生活" scheme="http://yoursite.com/categories/%E6%97%A5%E5%B8%B8%E7%94%9F%E6%B4%BB/"/>
+    
+    
+  </entry>
   
   <entry>
     <title>这是我的第一篇Blog</title>
