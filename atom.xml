@@ -2,11 +2,11 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
   <title>RudyWei</title>
   
-  
+  <subtitle>Coding until die.</subtitle>
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://yoursite.com/"/>
-  <updated>2019-07-30T16:33:50.622Z</updated>
+  <updated>2019-07-30T17:16:34.526Z</updated>
   <id>http://yoursite.com/</id>
   
   <author>
@@ -21,19 +21,19 @@
     <link href="http://yoursite.com/2019/07/30/test1/"/>
     <id>http://yoursite.com/2019/07/30/test1/</id>
     <published>2019-07-30T15:59:33.000Z</published>
-    <updated>2019-07-30T16:33:50.622Z</updated>
+    <updated>2019-07-30T17:16:34.526Z</updated>
     
-    <content type="html"><![CDATA[<h3 id="删除部分"><a href="#删除部分" class="headerlink" title="删除部分"></a>删除部分</h3><ol><li><p>删除在线聊天功能</p></li><li><p>删除文章阴影和动态背景canvas</p></li><li></li></ol><h3 id="增加部分"><a href="#增加部分" class="headerlink" title="增加部分"></a>增加部分</h3><ol><li>博客评论功能</li><li>侧栏链接</li><li>网站标识icon</li></ol><h3 id="预增部分"><a href="#预增部分" class="headerlink" title="预增部分"></a>预增部分</h3><ol><li>访客数和访问量统计</li><li>评论头像设置</li></ol>]]></content>
+    <content type="html"><![CDATA[<h3 id="删除部分"><a href="#删除部分" class="headerlink" title="删除部分"></a>删除部分</h3><ol><li>删除在线聊天功能</li><li>删除文章阴影和动态背景canvas</li></ol><h3 id="增加部分"><a href="#增加部分" class="headerlink" title="增加部分"></a>增加部分</h3><ol><li>设置头像avatar</li><li>博客评论功能daoVoice</li><li>侧边社交链接设置social</li><li>设置网站图标favicon</li><li>增加RSS订阅功能</li></ol><h3 id="预增部分"><a href="#预增部分" class="headerlink" title="预增部分"></a>预增部分</h3><ol><li><p>访客数和访问量统计</p></li><li><p>评论头像设置</p></li><li><p>版权信息</p></li><li><p>友情链接</p></li><li><p>打赏</p></li><li><p>博文置顶</p></li><li><p>底部🧡跳动</p></li><li><p>隐藏底部 XXXX驱动</p></li><li><p>阅读百分比</p></li></ol>]]></content>
     
     <summary type="html">
     
       
       
         &lt;h3 id=&quot;删除部分&quot;&gt;&lt;a href=&quot;#删除部分&quot; class=&quot;headerlink&quot; title=&quot;删除部分&quot;&gt;&lt;/a&gt;删除部分&lt;/h3&gt;&lt;ol&gt;
-&lt;li&gt;&lt;p&gt;删除在线聊天功能&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;&lt;p&gt;删除文章阴影和动态背景canvas&lt;/p&gt;
-&lt;/li&gt;
+&lt;li&gt;删除在线聊天功能&lt;/li&gt;
+&lt;li&gt;删除文章阴影和动态背景canvas&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h3 id=&quot;增
       
     
     </summary>
