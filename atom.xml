@@ -2,11 +2,11 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
   <title>RudyWei</title>
   
-  <subtitle>Coding until die.</subtitle>
+  <subtitle>欢 迎 光 临</subtitle>
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://yoursite.com/"/>
-  <updated>2019-07-30T17:16:34.526Z</updated>
+  <updated>2019-07-31T03:44:00.434Z</updated>
   <id>http://yoursite.com/</id>
   
   <author>
@@ -17,28 +17,28 @@
   <generator uri="http://hexo.io/">Hexo</generator>
   
   <entry>
-    <title>blog更新日志</title>
+    <title>Hexo+Github+NexT主题美化博客</title>
     <link href="http://yoursite.com/2019/07/30/test1/"/>
     <id>http://yoursite.com/2019/07/30/test1/</id>
     <published>2019-07-30T15:59:33.000Z</published>
-    <updated>2019-07-30T17:16:34.526Z</updated>
+    <updated>2019-07-31T03:44:00.434Z</updated>
     
-    <content type="html"><![CDATA[<h3 id="删除部分"><a href="#删除部分" class="headerlink" title="删除部分"></a>删除部分</h3><ol><li>删除在线聊天功能</li><li>删除文章阴影和动态背景canvas</li></ol><h3 id="增加部分"><a href="#增加部分" class="headerlink" title="增加部分"></a>增加部分</h3><ol><li>设置头像avatar</li><li>博客评论功能daoVoice</li><li>侧边社交链接设置social</li><li>设置网站图标favicon</li><li>增加RSS订阅功能</li></ol><h3 id="预增部分"><a href="#预增部分" class="headerlink" title="预增部分"></a>预增部分</h3><ol><li><p>访客数和访问量统计</p></li><li><p>评论头像设置</p></li><li><p>版权信息</p></li><li><p>友情链接</p></li><li><p>打赏</p></li><li><p>博文置顶</p></li><li><p>底部🧡跳动</p></li><li><p>隐藏底部 XXXX驱动</p></li><li><p>阅读百分比</p></li></ol>]]></content>
+    <content type="html"><![CDATA[<p>————————————-NexT主题美化博客———————————–</p><blockquote class="blockquote-center"><p>==NexT主题美化博客==</p></blockquote><h3 id="1-删除部分"><a href="#1-删除部分" class="headerlink" title="1. 删除部分"></a>1. 删除部分</h3><ol><li>删除在线聊天功能daoVoice</li><li>删除文章阴影和动态背景canvas</li></ol><h3 id="2-增加部分"><a href="#2-增加部分" class="headerlink" title="2. 增加部分"></a>2. 增加部分</h3><h4 id="2-1设置站点名称-昵称-简介"><a href="#2-1设置站点名称-昵称-简介" class="headerlink" title="2.1设置站点名称/昵称/简介"></a>2.1设置站点名称/昵称/简介</h4><p>打开站点配置文件<strong>_config.yml</strong> </p> <figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line"># Site</span><br><span class="line">title: RudyWei</span><br><span class="line">subtitle: 欢 迎 光 临</span><br><span class="line">description: 今天也要加油鸭！</span><br><span class="line">keywords:</span><br><span class="line">author: RudyWei</span><br><span class="line">language: zh-Hans</span><br><span class="line">timezone: Asia/Shanghai</span><br></pre></td></tr></table></figure><ol start="2"><li>设置头像avatar</li></ol><ol start="3"><li><p>博客评论功能valine</p></li><li><p>侧边社交链接设置social</p></li><li><p>设置网站图标favicon</p></li><li><p>增加RSS订阅功能</p></li></ol><h3 id="预增部分"><a href="#预增部分" class="headerlink" title="预增部分"></a>预增部分</h3><ol><li><p>访客数和访问量统计</p></li><li><p>评论头像设置</p></li><li><p>版权信息</p></li><li><p>友情链接</p></li><li><p>打赏</p></li><li><p>博文置顶</p></li><li><p>底部🧡跳动</p></li><li><p>隐藏底部 XXXX驱动</p></li><li><p>阅读百分比</p></li></ol>]]></content>
     
     <summary type="html">
     
       
       
-        &lt;h3 id=&quot;删除部分&quot;&gt;&lt;a href=&quot;#删除部分&quot; class=&quot;headerlink&quot; title=&quot;删除部分&quot;&gt;&lt;/a&gt;删除部分&lt;/h3&gt;&lt;ol&gt;
-&lt;li&gt;删除在线聊天功能&lt;/li&gt;
-&lt;li&gt;删除文章阴影和动态背景canvas&lt;/li&gt;
-&lt;/ol&gt;
-&lt;h3 id=&quot;增
+        &lt;p&gt;————————————-NexT主题美化博客———————————–&lt;/p&gt;
+&lt;blockquote class=&quot;blockquote-center&quot;&gt;&lt;p&gt;==NexT主题美化博客==&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;h3 id=&quot;1-删除部分&quot;&gt;&lt;a hre
       
     
     </summary>
     
-      <category term="日常生活" scheme="http://yoursite.com/categories/%E6%97%A5%E5%B8%B8%E7%94%9F%E6%B4%BB/"/>
+      <category term="博客搭建" scheme="http://yoursite.com/categories/%E5%8D%9A%E5%AE%A2%E6%90%AD%E5%BB%BA/"/>
     
     
   </entry>
@@ -48,7 +48,7 @@
     <link href="http://yoursite.com/2019/07/30/test/"/>
     <id>http://yoursite.com/2019/07/30/test/</id>
     <published>2019-07-30T15:59:30.000Z</published>
-    <updated>2019-07-30T16:15:06.756Z</updated>
+    <updated>2019-07-31T03:44:04.844Z</updated>
     
     <content type="html"><![CDATA[<blockquote class="blockquote-center"><p> 人的一切痛苦，本质上都是对自己无能的愤怒</p><p><strong>王小波</strong></p></blockquote><p>当代流传着这么一句话：<strong>“男生不可不读王小波，女生不可不读周国平。”</strong></p><p>王小波的作品以其文采和哲思赢得了无数读者的青睐，无论花季还是老年，都能从他的文字中收获智慧和超然。</p><p>王小波，中国当代学者、作家。代表作品有《黄金时代》《白银时代》《青铜时代》《黑铁时代》等。他仅创作的一部电影剧本《东宫西宫》，就获得了阿根廷国际电影节最佳编剧奖，并且入围1997年戛纳国际电影节。</p><p>在王小波的众多作品中，最吸引我的，就是他的《白银时代》。</p><p>翻开王小波《白银时代》的第一页，大学二年级热力学课老师正在课室上讲道：“将来的世界是银子的”。</p><p>自此，王小波便以一个独特的视角，在白银时代这个虚拟时空里作了一个关于未来世界的黑色预言。</p><p><strong>希腊神话里说，白银时代的人蒙神恩宠，终身不会衰老，也不会为生计所迫，他们没有痛苦没有忧虑，一直到死，相貌和心灵都像儿童。死掉以后，他们的幽灵还会在尘世上游荡。</strong></p><p>然而他所表现的白银世界却与神话中的乌托邦理想国大相径庭甚至是截然相反。</p><p>这是个在两个时空下同时进行的故事，一个是大二的学生时代，一个是2020年步入写作公司的职业时代。在作者眼里，它们都是白银时代，在同质化基础上构建起来的一个压抑自我和人性的强权社会。</p><p>这是个师生恋的故事。主人公被刻画成了一个受虐者，被倒挂，被钉十字架，如耶稣受难日那天般被折磨。我们在阅读之余，不禁惊叹王小波的世界，那深不见底的内涵。</p><p>王小波变幻莫测的文风，体现了现实对人的折磨，但不苦闷，也不压抑，自然流畅的文字为人们解读了现实中不可言喻的道理。</p><p>在故事中，有一句话不断被重复——“世界是银色的”。我们可以想象一下，整个世界都是灰蒙蒙的银色，看不到未来，主人公在银色的世界里被镀成了一个银色的雕塑，压抑、沉闷。</p><p>他的白银时代一些人说看不懂，一会儿是“我”坐在写字楼里写文章，一会儿又回到了师生恋，王小波的文章总是在这虚虚实实真真假假中，把读者绕进去。</p>]]></content>
     
