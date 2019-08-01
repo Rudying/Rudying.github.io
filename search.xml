@@ -38,23 +38,13 @@
     <content type="text"><![CDATA[Hi ,nice to meet you！MessageName: RudyWei Age：1995 Sex：male City： xi&#39;an ContactWeChat：Tu_chiangwei 请注明来意~~🙏 Resume暂无 FriendlyLink留言：网站名称&amp;网站地址 请先添加本站哦~~🙏]]></content>
   </entry>
   <entry>
-    <title><![CDATA[categories]]></title>
-    <url>%2Fcategories%2Findex.html</url>
-    <content type="text"></content>
-  </entry>
-  <entry>
     <title><![CDATA[archives]]></title>
     <url>%2Farchives%2Findex.html</url>
     <content type="text"></content>
   </entry>
   <entry>
-    <title><![CDATA[message]]></title>
-    <url>%2Fmessage%2Findex-1.html</url>
-    <content type="text"></content>
-  </entry>
-  <entry>
-    <title><![CDATA[message]]></title>
-    <url>%2Fmessage%2Findex.html</url>
+    <title><![CDATA[categories]]></title>
+    <url>%2Fcategories%2Findex.html</url>
     <content type="text"></content>
   </entry>
   <entry>
@@ -63,8 +53,18 @@
     <content type="text"></content>
   </entry>
   <entry>
+    <title><![CDATA[message]]></title>
+    <url>%2Fmessage%2Findex-1.html</url>
+    <content type="text"></content>
+  </entry>
+  <entry>
     <title><![CDATA[tags]]></title>
     <url>%2Ftags%2Findex.html</url>
+    <content type="text"></content>
+  </entry>
+  <entry>
+    <title><![CDATA[message]]></title>
+    <url>%2Fmessage%2Findex.html</url>
     <content type="text"></content>
   </entry>
 </search>
