@@ -42,7 +42,7 @@
       hits: {"per_page":10},
       labels: {"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}
     },
-    localsearch: {"enable":false,"trigger":"auto","top_n_per_article":1,"unescape":false,"preload":false},
+    localsearch: {"enable":true,"trigger":"auto","top_n_per_article":1,"unescape":false,"preload":false},
     search: {
       root: '/',
       path: 'search.xml'
@@ -171,7 +171,7 @@
       
     
 
-    <a href="/about/" rel="section"><i class="menu-item-icon fa fa-fw fa-user"></i> <br/>About</a>
+    <a href="/about/" rel="section"><i class="menu-item-icon fa fa-fw fa-user-circle"></i> <br/>About</a>
 
   </li>
         
@@ -197,7 +197,7 @@
       
     
 
-    <a href="/categories/" rel="section"><i class="menu-item-icon fa fa-fw fa-th"></i> <br/>Categories<span class="badge">3</span></a>
+    <a href="/categories/" rel="section"><i class="menu-item-icon fa fa-fw fa-th-large"></i> <br/>Categories<span class="badge">3</span></a>
 
   </li>
         
@@ -213,7 +213,34 @@
     <a href="/archives/" rel="section"><i class="menu-item-icon fa fa-fw fa-archive"></i> <br/>Archives<span class="badge">3</span></a>
 
   </li>
+        <li class="menu-item menu-item-search">
+          <a href="javascript:;" class="popup-trigger">
+          
+            <i class="menu-item-icon fa fa-search fa-fw"></i> <br/>Search</a>
+        </li>
+      
     </ul>
+    <div class="site-search">
+      
+  <div class="popup search-popup local-search-popup">
+  <div class="local-search-header clearfix">
+    <span class="search-icon">
+      <i class="fa fa-search"></i>
+    </span>
+    <span class="popup-btn-close">
+      <i class="fa fa-times-circle"></i>
+    </span>
+    <div class="local-search-input-wrapper">
+      <input autocomplete="off"
+             placeholder="Searching..." spellcheck="false"
+             type="text" id="local-search-input">
+    </div>
+  </div>
+  <div id="local-search-result"></div>
+</div>
+
+
+    </div>
 </nav>
 
 </div>
@@ -288,7 +315,7 @@
                 
                   <span class="post-meta-item-text">Edited on</span>
                 
-                <time title="Modified: 2019-08-01 02:36:24" itemprop="dateModified" datetime="2019-08-01T02:36:24+08:00">2019-08-01</time>
+                <time title="Modified: 2019-08-01 23:51:47" itemprop="dateModified" datetime="2019-08-01T23:51:47+08:00">2019-08-01</time>
               </span>
             
           
@@ -353,38 +380,42 @@
 
 <h2 id="☑️-NexT-v7-2-0-自带功能集合"><a href="#☑️-NexT-v7-2-0-自带功能集合" class="headerlink" title="☑️  NexT.v7.2.0 自带功能集合"></a>☑️  NexT.v7.2.0 自带功能集合</h2><p> 1️⃣ <a href="https://github.com/theme-next/theme-next.org" target="_blank" rel="noopener">NexT网站配置源码</a> ：主要看站点配置文件<code>_config.yml</code></p>
 <p> 2️⃣ <a href="https://github.com/theme-next/theme-next.org" target="_blank" rel="noopener">NexT主题配置源码</a>：主要看主题配置文件<code>_config.yml</code></p>
-<p> 两个不要搞混了~</p>
-<p> ❗️ 具体实现功能如下：</p>
+<p> 3️⃣<a href="https://theme-next.org/docs/">Next主题官方博客</a>:  绝大部分配置这里都可以找到</p>
+<p> ❗️ 本博客具体实现功能如下：</p>
 <ol>
 <li><p>设置站点名称/昵称/简介</p>
 </li>
-<li><p>设置menu：打开<code>themes/next/</code>下的<code>_config.yml</code>，查找<code>menu</code></p>
+<li><p>设置菜单<code>menu</code></p>
 </li>
-<li><p>设置头像avatar：打开<code>themes/next/</code>下的<code>_config.yml</code>，查找<code>avatar</code></p>
-<p>增加显示圆形，增加鼠标点击头像旋转</p>
+<li><p>设置头像<code>avatar</code></p>
 </li>
-<li><p>博客评论功能valine，需注册leancloud（要实名认证）</p>
+<li><p>博客评论功能<code>valine</code>,需注册<a href="https://leancloud.cn" target="_blank" rel="noopener">leancloud</a></p>
 </li>
-<li><p>侧边社交链接设置social 打开 <code>themes/next/_config.yml</code> 文件,搜索关键字 <code>social</code> ；打开 <code>themes/next/_config.yml</code> 文件,搜索关键字 <code>social_icons</code> ，添加社交站点名称（注意大小写）图标，<a href="https://link.zhihu.com/?target=http%3A//fontawesome.dashgame.com/" target="_blank" rel="noopener">Font Awesome</a>图标地</p>
+<li><p>设置社交链接&amp;图标<code>social</code>&amp; <code>social_icons</code> </p>
+<p>图标大全：<a href="https://link.zhihu.com/?target=http%3A//fontawesome.dashgame.com/" target="_blank" rel="noopener">Font Awesome</a></p>
 </li>
-<li><p>设置网站图标favicon:把头像设置成.png文件放到image文件夹下，在代码里替换掉image/后面的XXXX.png；logo.svg也可以用png替换（仅本人测试）</p>
+<li><p>设置网站图标<code>favicon</code>,把头像设置成.png文件放到image文件夹下，在代码里替换掉image/后面的XXXX.png；logo.svg也可以用png替换（本人测试成功）</p>
 <figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">favicon：</span><br><span class="line">  small：/ images / favicon-<span class="number">16</span>x16-next.png</span><br><span class="line">  medium：/images/favicon-<span class="number">32</span>x32-next.png</span><br><span class="line">  apple_touch_icon：/images/apple-touch-icon-next.png</span><br><span class="line">  safari_pinned_tab：/images/logo.svg</span><br><span class="line">  ＃ ANDROID_MANIFEST：/images/manifest.json</span><br><span class="line">  ＃ ms_browserconfig：/images/browserconfig.xml</span><br></pre></td></tr></table></figure>
 </li>
-<li><p>增加RSS订阅功能</p>
+<li><p>增加RSS订阅功能，详见3️⃣</p>
 </li>
-<li><p>减少两侧留白（新版自动实现两侧留白很少）</p>
+<li><p>减少两侧留白，详见3️⃣</p>
 </li>
-<li><p>阅读百分比（两种方式，一种在底部一种在侧栏）</p>
+<li><p>阅读百分比，详见3️⃣</p>
 </li>
-<li><p>访客数和访问量统计busuanzi (试了不准，我没做)</p>
+<li><p>访客数和访问量统计busuanzi (不准确，我没弄)</p>
 </li>
-<li><p>底部是否显示hexo /NexT 版本号 和 “驱动支持”</p>
+<li><p>底部是否显示hexo /NexT 版本号 和 “驱动支持”，详见3️⃣</p>
 </li>
-<li><p>Copyright 后面的❤️修改 增加动态设置和颜色设置</p>
+<li><p>Copyright 后面的❤️修改 增加动态设置和颜色设置，详见3️⃣</p>
 </li>
 <li><p>显示右上GitHub标识<code>github_banner</code></p>
 </li>
-<li><p><strong>本地搜索</strong>  （我还没做）</p>
+<li><p>代码页面增加copy按钮，详见3️⃣</p>
+</li>
+<li><p>在标签页显示标签云 <code>tagcloud</code></p>
+</li>
+<li><p><strong>本地搜索</strong>  ，详见3️⃣</p>
 </li>
 <li><p>图床<a href="https://zhuanlan.zhihu.com/p/35270383" target="_blank" rel="noopener">盘点一下免费好用的图床</a>  （我还没用）</p>
 </li>
@@ -890,7 +921,25 @@
       
         
       
-        <a href="https://blog.csdn.net/weixin_45361815" title="CSDN &rarr; https://blog.csdn.net/weixin_45361815" rel="noopener" target="_blank"><i class="fa fa-fw fa-crosshairs"></i></a>
+        <a href="https://blog.csdn.net/weixin_45361815" title="CSDN &rarr; https://blog.csdn.net/weixin_45361815" rel="noopener" target="_blank"><i class="fa fa-fw fa-contao"></i></a>
+      </span>
+    
+      <span class="links-of-author-item">
+      
+      
+      
+        
+      
+        <a href="https://www.facebook.com" title="FB Page &rarr; https://www.facebook.com" rel="noopener" target="_blank"><i class="fa fa-fw fa-facebook"></i></a>
+      </span>
+    
+      <span class="links-of-author-item">
+      
+      
+      
+        
+      
+        <a href="https://instagram.com" title="Instagram &rarr; https://instagram.com" rel="noopener" target="_blank"><i class="fa fa-fw fa-instagram"></i></a>
       </span>
     
   </div>
@@ -1007,70 +1056,6 @@
 
 
 
-  
-  <script>
-    function showTime(Counter) {
-      var entries = [];
-      var $visitors = $('.leancloud_visitors');
-
-      $visitors.each(function() {
-        entries.push( $(this).attr('id').trim() );
-      });
-
-      Counter('get', '/classes/Counter', { where: JSON.stringify({ url: { '$in': entries } }) })
-        .done(function({ results }) {
-          var COUNT_CONTAINER_REF = '.leancloud-visitors-count';
-
-          if (results.length === 0) {
-            $visitors.find(COUNT_CONTAINER_REF).text(0);
-            return;
-          }
-
-          for (var i = 0; i < results.length; i++) {
-            var item = results[i];
-            var url = item.url;
-            var time = item.time;
-            var element = document.getElementById(url);
-
-            $(element).find(COUNT_CONTAINER_REF).text(time);
-          }
-          for (var i = 0; i < entries.length; i++) {
-            var url = entries[i];
-            var element = document.getElementById(url);
-            var countSpan = $(element).find(COUNT_CONTAINER_REF);
-            if (countSpan.text() == '') {
-              countSpan.text(0);
-            }
-          }
-        })
-        .fail(function ({ responseJSON }) {
-          console.log(`LeanCloud Counter Error: ${responseJSON.code} ${responseJSON.error}`);
-        });
-    }
-    
-
-    $(function() {
-      $.get('https://app-router.leancloud.cn/2/route?appId=' + 'YcpenB5Tthf3MNe1IMSdVtr9-gzGzoHsz')
-        .done(function({ api_server }) {
-          var Counter = function(method, url, data) {
-            return $.ajax({
-              method: method,
-              url: `https://${api_server}/1.1${url}`,
-              headers: {
-                'X-LC-Id': 'YcpenB5Tthf3MNe1IMSdVtr9-gzGzoHsz',
-                'X-LC-Key': '2rRTJKgd0hlNEL6cG9clihJI',
-                'Content-Type': 'application/json',
-              },
-              data: data
-            });
-          };
-            if ($('.post-title-link').length >= 1) {
-              showTime(Counter);
-            }
-          
-        });
-    });
-  </script>
 
 
 
@@ -1082,6 +1067,8 @@
 
 
 
+
+  <script src="/js/local-search.js?v=7.2.0"></script>
 
 
 
@@ -1114,7 +1101,7 @@
     avatar: 'mm',
     meta: guest,
     pageSize: '10' || 10,
-    visitor: false,
+    visitor: true,
     lang: '' || 'zh-cn'
   });
 </script>
