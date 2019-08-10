@@ -209,7 +209,7 @@
       
     
 
-    <a href="/archives/" rel="section"><i class="menu-item-icon fa fa-fw fa-archive"></i> <br/>Archives<span class="badge">14</span></a>
+    <a href="/archives/" rel="section"><i class="menu-item-icon fa fa-fw fa-archive"></i> <br/>Archives<span class="badge">15</span></a>
 
   </li>
         <li class="menu-item menu-item-search">
@@ -258,6 +258,345 @@
           <div id="content" class="content">
             
   <section id="posts" class="posts-expand">
+      
+
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="https://theme-next.org/java04字符串/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="RudyWei">
+      <meta itemprop="description" content="“今天也要努力🦆”">
+      <meta itemprop="image" content="/images/timg.jpeg#avatar.gif">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="RudyWei's">
+    </span>
+      <header class="post-header">
+
+        
+          <h1 class="post-title" itemprop="name headline">
+                
+                
+                <a href="/java04字符串/" class="post-title-link" itemprop="url">java04字符串</a>
+              
+            
+          </h1>
+        
+
+        <div class="post-meta">
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">Posted on</span>
+              
+
+              
+                
+              
+
+              <time title="Created: 2019-08-10 01:02:01 / Modified: 22:25:30" itemprop="dateCreated datePublished" datetime="2019-08-10T01:02:01+08:00">2019-08-10</time>
+            </span>
+          
+            
+
+            
+          
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">In</span>
+              
+              
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing"><a href="/categories/javase/" itemprop="url" rel="index"><span itemprop="name">javase</span></a></span>
+
+                
+                
+              
+            </span>
+          
+
+          
+            <span id="/java04字符串/" class="post-meta-item leancloud_visitors" data-flag-title="java04字符串">
+              <span class="post-meta-item-icon">
+                <i class="fa fa-eye"></i>
+              </span>
+              
+                <span class="post-meta-item-text">Views: </span>
+              
+                <span class="leancloud-visitors-count"></span>
+            </span>
+          
+            
+  
+  <span class="post-meta-item">
+    
+    <span class="post-meta-item-icon">
+      <i class="fa fa-comment-o"></i>
+    </span>
+    
+      <span class="post-meta-item-text">Comments: </span>
+    
+  
+    <a href="/java04字符串/#comments" itemprop="discussionUrl">
+      <span class="post-comments-count valine-comment-count" data-xid="/java04字符串/" itemprop="commentCount"></span>
+    </a>
+  </span>
+  
+  
+          <br/>
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+          
+            <h1 id="字符串"><a href="#字符串" class="headerlink" title="字符串"></a>字符串</h1><h2 id="字符串相关类"><a href="#字符串相关类" class="headerlink" title="字符串相关类"></a>字符串相关类</h2><ol>
+<li><p>String类：代表一字符串，Java中所有的字符串字面量（如“abc”）都作为次类的实例实现</p>
+</li>
+<li><p>string是一个final类，<strong>代表不可变的字符序列</strong></p>
+</li>
+<li><p>字符串是常量，用双引号引起来，，它的值在赋值之后不能改变</p>
+</li>
+<li><p>String对象的字符内容是存储在一个字符数组value[]中的</p>
+</li>
+</ol>
+<p>源码实现如下：</p>
+<figure class="highlight java"><table><tr><td class="code"><pre><span class="line"><span class="comment">//string是不可变类</span></span><br><span class="line"><span class="keyword">public</span> <span class="keyword">final</span> <span class="class"><span class="keyword">class</span> <span class="title">String</span></span></span><br><span class="line"><span class="class">    <span class="keyword">implements</span> <span class="title">java</span>.<span class="title">io</span>.<span class="title">Serializable</span>, <span class="title">Comparable</span>&lt;<span class="title">String</span>&gt;, <span class="title">CharSequence</span> </span>&#123;</span><br><span class="line">    <span class="comment">/** The value is used for character storage. */</span></span><br><span class="line">    <span class="keyword">private</span> <span class="keyword">final</span> <span class="keyword">char</span> value[]; <span class="comment">//保持字符串内容</span></span><br><span class="line"></span><br><span class="line">    <span class="comment">/** Cache the hash code for the string */</span></span><br><span class="line">    <span class="keyword">private</span> <span class="keyword">int</span> hash; <span class="comment">// Default to 0</span></span><br><span class="line"></span><br><span class="line">    <span class="comment">/** use serialVersionUID from JDK 1.0.2 for interoperability */</span></span><br><span class="line">    <span class="keyword">private</span> <span class="keyword">static</span> <span class="keyword">final</span> <span class="keyword">long</span> serialVersionUID = -<span class="number">6849794470754667710L</span>;</span><br></pre></td></tr></table></figure>
+
+<p><strong>字面量的定义方式</strong></p>
+<p>示例代码：</p>
+<figure class="highlight java"><table><tr><td class="code"><pre><span class="line">String str = <span class="string">"abc"</span>;</span><br><span class="line">String str2 = <span class="string">"abc"</span>;</span><br><span class="line"></span><br><span class="line"><span class="comment">//System.out.println(str.equals(str2)); //true</span></span><br><span class="line">System.out.println(str == str2);<span class="comment">//true 以为常量池中有相同的数据，所以java会把str的地址赋值为str2</span></span><br><span class="line"></span><br><span class="line">str = <span class="string">"123"</span>; <span class="comment">//因为字符串的不可变性，java会创建一个新的地址赋值给str</span></span><br><span class="line">System.out.println(str == str2); <span class="comment">//false</span></span><br><span class="line"><span class="comment">//解释如下图</span></span><br></pre></td></tr></table></figure>
+
+<p><img src="%E5%AD%97%E7%AC%A6%E4%B8%B21.png" alt></p>
+<p><strong>String  str = &quot;abc&quot; 于 String str = new String(&quot;abc&quot;) 区别</strong></p>
+<ul>
+<li>字符串常量存储在常量池中，目的是共享信息</li>
+<li>new字符串对象存储在堆中</li>
+</ul>
+<p>示例代码：</p>
+<figure class="highlight java"><table><tr><td class="code"><pre><span class="line">String str1 = <span class="string">"abc"</span>;</span><br><span class="line">String str3 = <span class="keyword">new</span> String(<span class="string">"abc"</span>); <span class="comment">//创建对象，放入堆中</span></span><br><span class="line">String str4 = <span class="keyword">new</span> String(<span class="string">"abc"</span>); <span class="comment">//创建对象放入堆中</span></span><br><span class="line">System.out.println(str1 == str3); <span class="comment">//false</span></span><br><span class="line">System.out.println(str3 == str4); <span class="comment">//false</span></span><br><span class="line">System.out.println(str1.equals(str3)); <span class="comment">//true 因为string类重写object的equeals方法，故只判断内容相同</span></span><br><span class="line"></span><br><span class="line"><span class="comment">//itern方法返回常量池中保存的地址</span></span><br><span class="line">System.out.println(str1 == str3.intern()); <span class="comment">//true 因为str和str3内容相同，常量池中只保存一份</span></span><br></pre></td></tr></table></figure>
+
+<p><img src="%E5%AD%97%E7%AC%A6%E4%B8%B22.png" alt="1563351486200"></p>
+<ul>
+<li>常量于常量拼接的结果在常量池中，且常量池中不会存在相同的内容</li>
+<li>只要其中有一个是变量，结果就在堆中</li>
+<li>如果拼接的结果调用intern()方法，则返回值就在常量池中</li>
+</ul>
+<figure class="highlight java"><table><tr><td class="code"><pre><span class="line">String str1 = <span class="string">"hello"</span>;</span><br><span class="line">String str2 = <span class="string">"world"</span>;</span><br><span class="line">String str3 = <span class="string">"hello"</span> + <span class="string">"world"</span>;</span><br><span class="line">String str4 = str1 + <span class="string">"world"</span>;</span><br><span class="line">String str5 = str1 + str2;</span><br><span class="line">String str6 = (str1 + str2).intern();</span><br><span class="line"></span><br><span class="line">System.out.println(str3 == str4); <span class="comment">//false</span></span><br><span class="line">System.out.println(str3 == str5); <span class="comment">//false</span></span><br><span class="line">System.out.println(str4 == str5); <span class="comment">//false</span></span><br><span class="line">System.out.println(str3 == str6);<span class="comment">// true</span></span><br></pre></td></tr></table></figure>
+
+<p><strong>进一步理解string的不可变性：</strong></p>
+<figure class="highlight java"><table><tr><td class="code"><pre><span class="line"><span class="class"><span class="keyword">class</span> <span class="title">Person</span></span>&#123;</span><br><span class="line">	<span class="keyword">public</span> String name;</span><br><span class="line">	<span class="keyword">public</span> <span class="keyword">int</span> age;</span><br><span class="line">	<span class="function"><span class="keyword">public</span> <span class="title">Person</span><span class="params">(String name, <span class="keyword">int</span> age)</span> </span>&#123;</span><br><span class="line">		<span class="keyword">super</span>();</span><br><span class="line">		<span class="keyword">this</span>.name = name;</span><br><span class="line">		<span class="keyword">this</span>.age = age;</span><br><span class="line">	&#125;</span><br><span class="line">	</span><br><span class="line">	</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">Person p1 = <span class="keyword">new</span> Person(<span class="string">"小明"</span>,<span class="number">20</span>);</span><br><span class="line">Person p2 = <span class="keyword">new</span> Person(<span class="string">"小明"</span>,<span class="number">20</span>);</span><br><span class="line"></span><br><span class="line">System.out.println(p1 == p2); <span class="comment">//false</span></span><br><span class="line">System.out.println(p1.name == p2.name); <span class="comment">//true  不同对象中的string属性保存在同一个常量池中</span></span><br></pre></td></tr></table></figure>
+
+<p>理解视图：</p>
+<p><img src="%E5%AD%97%E7%AC%A6%E4%B8%B23.png" alt="1563354067440"></p>
+<p>思考题：</p>
+<figure class="highlight java"><table><tr><td class="code"><pre><span class="line"><span class="keyword">package</span> com.woniu.demo01;</span><br><span class="line"></span><br><span class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">class</span> <span class="title">StringTest2</span> </span>&#123;</span><br><span class="line">	</span><br><span class="line">	String str = <span class="keyword">new</span> String(<span class="string">"good"</span>);</span><br><span class="line">	<span class="keyword">char</span>[] ch = &#123;<span class="string">'t'</span>,<span class="string">'e'</span>,<span class="string">'s'</span>,<span class="string">'t'</span>&#125;;</span><br><span class="line">	<span class="keyword">int</span>  i =<span class="number">10</span>;</span><br><span class="line">	</span><br><span class="line">	<span class="function"><span class="keyword">public</span> <span class="keyword">void</span> <span class="title">change</span><span class="params">(String str, <span class="keyword">char</span>[] ch , <span class="keyword">int</span> i)</span></span>&#123;</span><br><span class="line">		<span class="comment">//System.out.println(i + "-----");</span></span><br><span class="line">		<span class="comment">//System.out.println(str + "------");</span></span><br><span class="line">		str = <span class="string">"test ok"</span>;<span class="comment">//</span></span><br><span class="line">		<span class="comment">//System.out.println(str + "========");</span></span><br><span class="line">		ch[<span class="number">0</span>] = <span class="string">'b'</span>;</span><br><span class="line">		i = <span class="number">100</span>;</span><br><span class="line">	&#125;</span><br><span class="line">	</span><br><span class="line">	<span class="function"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">void</span> <span class="title">main</span><span class="params">(String[] args)</span> </span>&#123;</span><br><span class="line">		StringTest2 test = <span class="keyword">new</span> StringTest2();</span><br><span class="line">		</span><br><span class="line">		test.change(test.str, test.ch,test.i);</span><br><span class="line">		</span><br><span class="line">		System.out.println(test.str); <span class="comment">//good</span></span><br><span class="line">		System.out.println(test.ch); <span class="comment">//best</span></span><br><span class="line">		System.out.println(test.i); <span class="comment">//10</span></span><br><span class="line">	&#125;</span><br><span class="line"></span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<p>补充：参数传递</p>
+<ul>
+<li>参数传递本质上都是值传递，将变量存储的内容复制一份给方法调用的形参</li>
+<li>值类型数据：变量保存的是数据本身，所以传递是复制数据本身</li>
+<li>引用类型：变量保存的是引用（地址），所以传递的是地址，如果方法内部对传递的数据进行修改，会影响到原来的数据。</li>
+</ul>
+<p>​    理解图示：</p>
+<p><img src="%E5%AD%97%E7%AC%A6%E4%B8%B24.png" alt="1563356131596"></p>
+<p><strong>String常用方法：</strong></p>
+<table>
+<thead>
+<tr>
+<th>返回值<strong>Modifier and Type</strong></th>
+<th>方法名</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>int</td>
+<td><strong>length</strong>() ：获取字符串的长度</td>
+</tr>
+<tr>
+<td>char</td>
+<td>charAt(int index):获取字符串中的一个字符</td>
+</tr>
+<tr>
+<td>int</td>
+<td>indexOf(String str) ：返回传入的字符串出现的首位置</td>
+</tr>
+<tr>
+<td>boolean</td>
+<td><strong>startsWith</strong>(<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html" target="_blank" rel="noopener">String</a> prefix) ： 返回原字符串是否为传入的字符串开头</td>
+</tr>
+<tr>
+<td>boolean</td>
+<td>endsWith(String suffix):是否为以指的的字符串结尾</td>
+</tr>
+<tr>
+<td>string</td>
+<td>toLowerCase()：返回原来的字符串小写</td>
+</tr>
+<tr>
+<td>string</td>
+<td>toUpperCase()：返回原来的字符串大写</td>
+</tr>
+<tr>
+<td>string</td>
+<td><strong>substring</strong>(int beginIndex) :从指定下标到结束</td>
+</tr>
+<tr>
+<td>string</td>
+<td><strong>substring</strong>(int beginIndex, int endIndex) : 包含开始，不包含结束</td>
+</tr>
+</tbody></table>
+<p>作业：</p>
+<p>1、验证邮箱的正确行：</p>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">- 必须包含点（.）和@符号</span><br><span class="line">- 点（.）必须在@符号之后</span><br><span class="line">- @只能出现一次</span><br><span class="line">- @和点直接必须有字符</span><br><span class="line">- 不能使用中文</span><br></pre></td></tr></table></figure>
+
+<p>2、过滤不文明词汇</p>
+<p>​    “中国足球真TM烂，TM的。TM的烂”</p>
+<p><strong>字符串和基本类型转换</strong></p>
+<ol>
+<li>基本类型---&gt;字符串，<ul>
+<li>可以用一个空的“”号相加</li>
+</ul>
+</li>
+<li>字符---&gt;基本类型：<ul>
+<li>包装类.parseXXX(&quot;&quot;)</li>
+</ul>
+</li>
+</ol>
+<p><strong>StringBuider 和stringBuffer的区别</strong></p>
+<p>StringBuffer：</p>
+<p>查看源码：</p>
+<figure class="highlight java"><table><tr><td class="code"><pre><span class="line"><span class="keyword">abstract</span> <span class="class"><span class="keyword">class</span> <span class="title">AbstractStringBuilder</span> <span class="keyword">implements</span> <span class="title">Appendable</span>, <span class="title">CharSequence</span> </span>&#123;</span><br><span class="line">    <span class="comment">/**</span></span><br><span class="line"><span class="comment">     * The value is used for character storage.</span></span><br><span class="line"><span class="comment">     */</span></span><br><span class="line">    <span class="keyword">char</span>[] value;  <span class="comment">//可变字符序列</span></span><br><span class="line"></span><br><span class="line">    <span class="comment">/**</span></span><br><span class="line"><span class="comment">     * The count is the number of characters used.</span></span><br><span class="line"><span class="comment">     */</span></span><br><span class="line">    <span class="keyword">int</span> count; <span class="comment">//字符串长度</span></span><br><span class="line"></span><br><span class="line">    <span class="comment">/**</span></span><br></pre></td></tr></table></figure>
+
+<p>默认初始值大小</p>
+<figure class="highlight java"><table><tr><td class="code"><pre><span class="line">   <span class="comment">/**</span></span><br><span class="line"><span class="comment">    * Constructs a string buffer with no characters in it and an</span></span><br><span class="line"><span class="comment">    * initial capacity of 16 characters.</span></span><br><span class="line"><span class="comment">    */</span></span><br><span class="line">   <span class="function"><span class="keyword">public</span> <span class="title">StringBuffer</span><span class="params">()</span> </span>&#123;</span><br><span class="line">       <span class="keyword">super</span>(<span class="number">16</span>); <span class="comment">//调用父类方法创建stringBuffer字符串</span></span><br><span class="line">   &#125;</span><br><span class="line"></span><br><span class="line"><span class="comment">/**</span></span><br><span class="line"><span class="comment">    * Creates an AbstractStringBuilder of the specified capacity.</span></span><br><span class="line"><span class="comment">    */</span></span><br><span class="line">   AbstractStringBuilder(<span class="keyword">int</span> capacity) &#123;</span><br><span class="line">       value = <span class="keyword">new</span> <span class="keyword">char</span>[capacity]; <span class="comment">//创建大小为16的字符数组</span></span><br><span class="line">   &#125;</span><br></pre></td></tr></table></figure>
+
+<p>注意：</p>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">- StringBuffer初始大小为16个字符，如果我们的操作的字符大于16个建议创建时给初始大小</span><br><span class="line">- 可变字符序列</span><br><span class="line">- 线程安全，效率低</span><br></pre></td></tr></table></figure>
+
+<p>面试题：string、stringBuffer、StringBuilder的区别</p>
+<ul>
+<li>string（JDK1.0） : 不可变序列</li>
+<li>StringBuffer（JDK1.0）：可变序列，效率低，线程安全</li>
+<li>StringBuilder（JDK1.5）：可变序列，效率高，线程不安全</li>
+</ul>
+<p>查看三者之间的效率：</p>
+<figure class="highlight java"><table><tr><td class="code"><pre><span class="line"><span class="keyword">package</span> com.woniu.demo02;</span><br><span class="line"></span><br><span class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">class</span> <span class="title">StringEfficiencyTest</span> </span>&#123;</span><br><span class="line">	<span class="function"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">void</span> <span class="title">main</span><span class="params">(String[] args)</span> </span>&#123;</span><br><span class="line">		<span class="keyword">long</span> startTime = <span class="number">0L</span>;</span><br><span class="line">		<span class="keyword">long</span> endTime = <span class="number">0L</span>;</span><br><span class="line">		String text = <span class="string">""</span>;</span><br><span class="line">		StringBuffer buffer = <span class="keyword">new</span> StringBuffer(<span class="string">""</span>);</span><br><span class="line">		StringBuilder builder = <span class="keyword">new</span> StringBuilder(<span class="string">""</span>);</span><br><span class="line">		</span><br><span class="line">		<span class="comment">// 开始对比</span></span><br><span class="line">		startTime = System.currentTimeMillis();</span><br><span class="line">		<span class="keyword">for</span> (<span class="keyword">int</span> i = <span class="number">0</span>; i &lt; <span class="number">20000</span>; i++) &#123;</span><br><span class="line">			buffer.append(String.valueOf(i));</span><br><span class="line">		&#125;</span><br><span class="line">		endTime = System.currentTimeMillis();</span><br><span class="line">		System.out.println(<span class="string">"StringBuffer的执行时间："</span> + (endTime - startTime));</span><br><span class="line">		</span><br><span class="line">		startTime = System.currentTimeMillis();</span><br><span class="line">		<span class="keyword">for</span> (<span class="keyword">int</span> i = <span class="number">0</span>; i &lt; <span class="number">20000</span>; i++) &#123;</span><br><span class="line">			builder.append(String.valueOf(i));</span><br><span class="line">		&#125;</span><br><span class="line">		endTime = System.currentTimeMillis();</span><br><span class="line">		System.out.println(<span class="string">"StringBuilder的执行时间："</span> + (endTime - startTime));</span><br><span class="line">		</span><br><span class="line">		</span><br><span class="line">		startTime = System.currentTimeMillis();</span><br><span class="line">		<span class="keyword">for</span> (<span class="keyword">int</span> i = <span class="number">0</span>; i &lt; <span class="number">20000</span>; i++) &#123;</span><br><span class="line">			text = text + i;</span><br><span class="line">		&#125;</span><br><span class="line">		endTime = System.currentTimeMillis();</span><br><span class="line">		System.out.println(<span class="string">"String的执行时间："</span> + (endTime - startTime));</span><br><span class="line">	&#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<p><strong>==和equals</strong></p>
+<ul>
+<li>== 是操作符、equals是方法</li>
+</ul>
+<p>==：</p>
+<ul>
+<li>基本类型：== 只要值相等返回true</li>
+<li>引用类型：== 判断是否为变量中为同一地址，相同返回ture</li>
+</ul>
+<p>equals：</p>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">- 所有的类都继承了父类（java.lang.Object）中的equals方法</span><br><span class="line">- object中的equals和==本质上是相同的结果</span><br></pre></td></tr></table></figure>
+
+<p>特例：</p>
+<ul>
+<li>当使用equels方法进行比较时，对File ，String、Data及包装类，来说比较的是内容，而不考虑是否为同一个引用</li>
+<li>当自定义对象是，我们可以考虑重写Object中继承的equals方法，用于比较对象的“内容”是否相同</li>
+</ul>
+<p>源码：</p>
+<figure class="highlight java"><table><tr><td class="code"><pre><span class="line">*/</span><br><span class="line"> <span class="function"><span class="keyword">public</span> <span class="keyword">boolean</span> <span class="title">equals</span><span class="params">(Object obj)</span> </span>&#123;</span><br><span class="line">     <span class="keyword">return</span> (<span class="keyword">this</span> == obj); <span class="comment">//比较的还是地址</span></span><br><span class="line"> &#125;</span><br></pre></td></tr></table></figure>
+
+<p>总结：面试题： == 和equals区别</p>
+<p>1、== 即可以比较基本类型也可以比较引用类型，对于基本类型比较的就是值，对于引用类型比较的内存地址</p>
+<p>2、equlas、它是Object类中的方法，如果该方法没有被重写则默认使用==. 我们经常使用的string等类。equals方法被重写，比较的是“内容”。</p>
+<p>3、通常情况下，我们重写equals方法，会比较类中的相应属性是否相等</p>
+<h2 id="Sting常用转换"><a href="#Sting常用转换" class="headerlink" title="Sting常用转换"></a>Sting常用转换</h2><h3 id="基本类型-gt-字符串："><a href="#基本类型-gt-字符串：" class="headerlink" title="基本类型--&gt;字符串："></a>基本类型--&gt;字符串：</h3><ol>
+<li><p>使用包装类的 toString() 方法</p>
+<figure class="highlight java"><table><tr><td class="code"><pre><span class="line"><span class="keyword">int</span> c=<span class="number">10</span>;</span><br><span class="line">String str1=Integer.toString(c);</span><br><span class="line">System.out.println(<span class="string">"toString 方法转化的字符串："</span>+str);</span><br></pre></td></tr></table></figure>
+</li>
+<li><p>使用String类的 valueOf() 方法</p>
+<figure class="highlight java"><table><tr><td class="code"><pre><span class="line">String str2=String.valueOf(c);</span><br><span class="line">System.out.println(<span class="string">"使用String类的valueOf（）方法转化的字符串"</span>+str2);</span><br></pre></td></tr></table></figure>
+</li>
+<li><p>用一个空字符串加上基本类型，得到的就是基本类型数据对应的字符串</p>
+<figure class="highlight java"><table><tr><td class="code"><pre><span class="line">String str3=c+<span class="string">""</span>;</span><br><span class="line">System.out.println(<span class="string">"使用控制符串添加的到的字符串："</span>+str3);</span><br></pre></td></tr></table></figure>
+
+
+
+</li>
+</ol>
+<h3 id="字符串-gt-基本类型："><a href="#字符串-gt-基本类型：" class="headerlink" title="字符串--&gt;基本类型："></a>字符串--&gt;基本类型：</h3><ol>
+<li><p>调用包装类的 parseXxx 静态方法</p>
+<figure class="highlight java"><table><tr><td class="code"><pre><span class="line">String str=<span class="string">"8"</span>;</span><br><span class="line"><span class="keyword">int</span> d=Integer.parseInt(str);</span><br><span class="line">System.out.println(<span class="string">"调用包装类的parse转化："</span>+d);</span><br></pre></td></tr></table></figure>
+</li>
+<li><p>调用包装类的 valueOf() 方法转换为基本类型的包装类，会自动拆箱</p>
+<figure class="highlight java"><table><tr><td class="code"><pre><span class="line"><span class="keyword">int</span> e=Integer.valueOf(str);</span><br><span class="line">System.out.println(<span class="string">"调用valueOf方法转化："</span>+e);</span><br></pre></td></tr></table></figure>
+
+</li>
+</ol>
+<h3 id="数组-gt-字符串"><a href="#数组-gt-字符串" class="headerlink" title="数组 --&gt; 字符串"></a>数组 --&gt; 字符串</h3><ol>
+<li><p>字符数组--&gt;字符串</p>
+<p>String 类的构造器：String(char value[])、String(char value[], int offffset, int count) </p>
+<figure class="highlight java"><table><tr><td class="code"><pre><span class="line"><span class="comment">//调用String(char value[])构造器</span></span><br><span class="line"><span class="keyword">char</span>[] c =&#123;<span class="string">'中'</span>,<span class="string">'国'</span>,<span class="string">'3'</span>,<span class="string">'4'</span>,<span class="string">'5'</span>&#125;;</span><br><span class="line">System.out.println(<span class="keyword">new</span> String(c));<span class="comment">//中国345</span></span><br><span class="line"></span><br><span class="line"><span class="comment">//调用String(char value[], int offffset, int count)</span></span><br><span class="line">System.out.println(<span class="keyword">new</span> String(c,<span class="number">1</span>,<span class="number">3</span>));<span class="comment">//国34</span></span><br><span class="line"></span><br><span class="line"><span class="comment">//遍历</span></span><br><span class="line">String[] arr = &#123; <span class="string">"0"</span>, <span class="string">"1"</span>, <span class="string">"2"</span>, <span class="string">"3"</span>, <span class="string">"4"</span>, <span class="string">"5"</span> &#125;;</span><br><span class="line">StringBuffer str5 = <span class="keyword">new</span> StringBuffer();</span><br><span class="line"><span class="keyword">for</span> (String s : arr) &#123;</span><br><span class="line">    str5.append(s);</span><br><span class="line">&#125;</span><br><span class="line">System.out.println(str5.toString()); <span class="comment">// 012345</span></span><br></pre></td></tr></table></figure>
+
+
+
+</li>
+</ol>
+<ol start="2">
+<li><p>字节数组---&gt;字符串</p>
+<figure class="highlight java"><table><tr><td class="code"><pre><span class="line"><span class="comment">//调用String(byte bytes[])构造器</span></span><br><span class="line"><span class="keyword">byte</span>[] b = &#123;<span class="string">'a'</span>,<span class="string">'1'</span>,<span class="string">'b'</span>&#125;;</span><br><span class="line">System.out.println(<span class="keyword">new</span> String(b));<span class="comment">//a1b</span></span><br><span class="line"><span class="comment">//String(byte bytes[], int offffset, int length)</span></span><br><span class="line">System.out.println(<span class="keyword">new</span> String(b,<span class="number">1</span>,<span class="number">2</span>));<span class="comment">//1b</span></span><br></pre></td></tr></table></figure>
+
+</li>
+</ol>
+<h3 id="字符串-gt-数组"><a href="#字符串-gt-数组" class="headerlink" title="字符串 --&gt; 数组"></a>字符串 --&gt; 数组</h3><ol>
+<li><p>字符串--&gt;字符数组</p>
+<figure class="highlight java"><table><tr><td class="code"><pre><span class="line"><span class="comment">//1.char[] toCharArray()</span></span><br><span class="line">	String str1 = <span class="string">"hello"</span>;</span><br><span class="line">	System.out.println(str1.toCharArray());<span class="comment">//hello</span></span><br><span class="line"></span><br><span class="line"><span class="comment">//2.getChars(char dst[], int dstBegin)</span></span><br><span class="line">    String str1 = <span class="string">"hello"</span>;</span><br><span class="line">	str1.getChars(<span class="number">0</span>, <span class="number">5</span>, str1, <span class="number">0</span>);<span class="comment">//报错</span></span><br><span class="line"></span><br><span class="line"><span class="comment">//3.getChars(int srcBegin, int srcEnd, char dst[], int dstBegin) </span></span><br><span class="line"></span><br><span class="line"><span class="comment">//4.当字符串中含有特定字符需要转义符</span></span><br><span class="line">	<span class="comment">// 字符串转数组  java.lang.String</span></span><br><span class="line">    String str = <span class="string">"0,1,2,3,4,5"</span>;</span><br><span class="line">    String[] arr = str.split(<span class="string">","</span>); <span class="comment">// 用,分割</span></span><br><span class="line">    System.out.println(Arrays.toString(arr)); <span class="comment">// [0, 1, 2, 3, 4, 5]</span></span><br></pre></td></tr></table></figure>
+
+
+
+</li>
+</ol>
+<ol start="2">
+<li><p>字符串---&gt;字节数组</p>
+<p>byte[] getBytes()：使用平台的默认字符集将此 String 编码为byte 序列，并将结果存储到一 </p>
+<p>个新的 byte 数组中 </p>
+<figure class="highlight java"><table><tr><td class="code"><pre><span class="line">String str = <span class="string">"中"</span>; </span><br><span class="line">System.out.println(str.getBytes(<span class="string">"ISO8859-1"</span>).length);<span class="comment">// -128~127 </span></span><br><span class="line">System.out.println(str.getBytes(<span class="string">"GBK"</span>).length); System.out.println(str.getBytes(<span class="string">"UTF-8"</span>).length); System.out.println(<span class="keyword">new</span> String(str.getBytes(<span class="string">"ISO8859-1"</span>), <span class="string">"ISO8859-1"</span>));<span class="comment">// 乱码，表示不了中文 </span></span><br><span class="line">System.out.println(<span class="keyword">new</span> String(str.getBytes(<span class="string">"GBK"</span>), <span class="string">"GBK"</span>)); System.out.println(<span class="keyword">new</span> String(str.getBytes(<span class="string">"UTF-8"</span>), <span class="string">"UTF-8"</span>));</span><br></pre></td></tr></table></figure>
+
+<p>byte[] getBytes(String charsetName)：使用指定的字符集将此 String 编码到 byte 序列，并 </p>
+<p>将结果存储到新的 byte 数组</p>
+</li>
+</ol>
+<h3 id="Stringbuffer-、Stringbuilder-、String区别"><a href="#Stringbuffer-、Stringbuilder-、String区别" class="headerlink" title="Stringbuffer 、Stringbuilder 、String区别"></a>Stringbuffer 、Stringbuilder 、String区别</h3><p>String程序运行时会额外创建一个对象，保存String的字符串。当频繁操作字符串时，就会额外产生很多临时变量。StringBuffer 和 StringBuilder 类的对象能够被多次的修改，并且不产生新的未使用对象。至于 StringBuilder 和StringBuffer ，它们基本相似，不同之处，StringBuffer 是线程安全的，而 StringBuilder 则没有实现线程安全功能（不能同步访问），所以性能略高。因此一般情况下，如果需要创建一个内容可变的字符串对象，应优先考虑使用 StringBuilder 类。</p>
+
+          
+        
+      
+    </div>
+
+    
+    
+    
+
+    <footer class="post-footer">
+        <div class="post-eof"></div>
+    </footer>
+  </div>
+  
+  
+  
+  </article>
+
+    
       
 
   <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
@@ -986,203 +1325,6 @@ s+=1; //等价于 s=(short)(s+1) 需要强制转换</code></pre></li>
   </article>
 
     
-      
-
-  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
-  
-  
-  
-  <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="https://theme-next.org/博客美化/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="name" content="RudyWei">
-      <meta itemprop="description" content="“今天也要努力🦆”">
-      <meta itemprop="image" content="/images/timg.jpeg#avatar.gif">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="RudyWei's">
-    </span>
-      <header class="post-header">
-
-        
-          <h1 class="post-title" itemprop="name headline">
-                
-                
-                <a href="/博客美化/" class="post-title-link" itemprop="url">博客美化</a>
-              
-            
-          </h1>
-        
-
-        <div class="post-meta">
-            <span class="post-meta-item">
-              <span class="post-meta-item-icon">
-                <i class="fa fa-calendar-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">Posted on</span>
-              
-
-              
-                
-              
-
-              <time title="Created: 2019-07-30 23:59:33" itemprop="dateCreated datePublished" datetime="2019-07-30T23:59:33+08:00">2019-07-30</time>
-            </span>
-          
-            
-
-            
-              <span class="post-meta-item">
-                <span class="post-meta-item-icon">
-                  <i class="fa fa-calendar-check-o"></i>
-                </span>
-                
-                  <span class="post-meta-item-text">Edited on</span>
-                
-                <time title="Modified: 2019-08-01 23:51:47" itemprop="dateModified" datetime="2019-08-01T23:51:47+08:00">2019-08-01</time>
-              </span>
-            
-          
-            <span class="post-meta-item">
-              <span class="post-meta-item-icon">
-                <i class="fa fa-folder-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">In</span>
-              
-              
-                <span itemprop="about" itemscope itemtype="http://schema.org/Thing"><a href="/categories/技术分享/" itemprop="url" rel="index"><span itemprop="name">技术分享</span></a></span>
-
-                
-                
-              
-            </span>
-          
-
-          
-            <span id="/博客美化/" class="post-meta-item leancloud_visitors" data-flag-title="博客美化">
-              <span class="post-meta-item-icon">
-                <i class="fa fa-eye"></i>
-              </span>
-              
-                <span class="post-meta-item-text">Views: </span>
-              
-                <span class="leancloud-visitors-count"></span>
-            </span>
-          
-            
-  
-  <span class="post-meta-item">
-    
-    <span class="post-meta-item-icon">
-      <i class="fa fa-comment-o"></i>
-    </span>
-    
-      <span class="post-meta-item-text">Comments: </span>
-    
-  
-    <a href="/博客美化/#comments" itemprop="discussionUrl">
-      <span class="post-comments-count valine-comment-count" data-xid="/博客美化/" itemprop="commentCount"></span>
-    </a>
-  </span>
-  
-  
-          <br/>
-
-        </div>
-      </header>
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-
-      
-          
-            <blockquote class="blockquote-center"><p><strong>NexT主题美化</strong></p>
-</blockquote>            
-
-<h2 id="☑️-NexT-v7-2-0-自带功能集合"><a href="#☑️-NexT-v7-2-0-自带功能集合" class="headerlink" title="☑️  NexT.v7.2.0 自带功能集合"></a>☑️  NexT.v7.2.0 自带功能集合</h2><p> 1️⃣ <a href="https://github.com/theme-next/theme-next.org" target="_blank" rel="noopener">NexT网站配置源码</a> ：主要看站点配置文件<code>_config.yml</code></p>
-<p> 2️⃣ <a href="https://github.com/theme-next/theme-next.org" target="_blank" rel="noopener">NexT主题配置源码</a>：主要看主题配置文件<code>_config.yml</code></p>
-<p> 3️⃣<a href="https://theme-next.org/docs/">Next主题官方博客</a>:  绝大部分配置这里都可以找到</p>
-<p> ❗️ 本博客具体实现功能如下：</p>
-<ol>
-<li><p>设置站点名称/昵称/简介</p>
-</li>
-<li><p>设置菜单<code>menu</code></p>
-</li>
-<li><p>设置头像<code>avatar</code></p>
-</li>
-<li><p>博客评论功能<code>valine</code>,需注册<a href="https://leancloud.cn" target="_blank" rel="noopener">leancloud</a></p>
-</li>
-<li><p>设置社交链接&amp;图标<code>social</code>&amp; <code>social_icons</code> </p>
-<p>图标大全：<a href="https://link.zhihu.com/?target=http%3A//fontawesome.dashgame.com/" target="_blank" rel="noopener">Font Awesome</a></p>
-</li>
-<li><p>设置网站图标<code>favicon</code>,把头像设置成.png文件放到image文件夹下，在代码里替换掉image/后面的XXXX.png；logo.svg也可以用png替换（本人测试成功）</p>
-<figure class="highlight java"><table><tr><td class="code"><pre><span class="line">favicon：</span><br><span class="line">  small：/ images / favicon-<span class="number">16</span>x16-next.png</span><br><span class="line">  medium：/images/favicon-<span class="number">32</span>x32-next.png</span><br><span class="line">  apple_touch_icon：/images/apple-touch-icon-next.png</span><br><span class="line">  safari_pinned_tab：/images/logo.svg</span><br><span class="line">  ＃ ANDROID_MANIFEST：/images/manifest.json</span><br><span class="line">  ＃ ms_browserconfig：/images/browserconfig.xml</span><br></pre></td></tr></table></figure>
-</li>
-<li><p>增加RSS订阅功能，详见3️⃣</p>
-</li>
-<li><p>减少两侧留白，详见3️⃣</p>
-</li>
-<li><p>阅读百分比，详见3️⃣</p>
-</li>
-<li><p>访客数和访问量统计busuanzi (不准确，我没弄)</p>
-</li>
-<li><p>底部是否显示hexo /NexT 版本号 和 “驱动支持”，详见3️⃣</p>
-</li>
-<li><p>Copyright 后面的❤️修改 增加动态设置和颜色设置，详见3️⃣</p>
-</li>
-<li><p>显示右上GitHub标识<code>github_banner</code></p>
-</li>
-<li><p>代码页面增加copy按钮，详见3️⃣</p>
-</li>
-<li><p>在标签页显示标签云 <code>tagcloud</code></p>
-</li>
-<li><p><strong>本地搜索</strong>  ，详见3️⃣</p>
-</li>
-<li><p>图床<a href="https://zhuanlan.zhihu.com/p/35270383" target="_blank" rel="noopener">盘点一下免费好用的图床</a>  （我还没用）</p>
-</li>
-<li><p>友情链接</p>
-<p>打开 <code>themes/next/_config.yml</code> 文件,搜索关键字 <code>Blog rolls</code></p>
-</li>
-<li><p>博文置顶<a href="http://wangwlj.com/2018/01/09/blog_pin_post/" target="_blank" rel="noopener">Hexo博客彻底解决置顶问题</a> （我还没做）</p>
-</li>
-</ol>
-<h2 id="❌-删除部分"><a href="#❌-删除部分" class="headerlink" title="❌ 删除部分"></a>❌ 删除部分</h2><ol>
-<li><p>删除在线聊天功能daoVoice</p>
-</li>
-<li><p>删除文章阴影和动态背景canvas</p>
-<p>理由：太占资源了而且并不实用(包括看板娘/鼠标点击效果/爆炸效果/内插音乐播放器等)不建议设置。</p>
-</li>
-</ol>
-<h2 id="🆕-新功能"><a href="#🆕-新功能" class="headerlink" title="🆕 新功能"></a>🆕 新功能</h2><p>待发掘...</p>
-<hr>
-<p>本文为原创内容，转载请注明出处。🙏</p>
-<hr>
-
-          
-        
-      
-    </div>
-
-    
-    
-    
-
-    <footer class="post-footer">
-        <div class="post-eof"></div>
-    </footer>
-  </div>
-  
-  
-  
-  </article>
-
-    
   </section>
 
   
@@ -1223,7 +1365,7 @@ s+=1; //等价于 s=(short)(s+1) 需要强制转换</code></pre></li>
         
           <a href="/archives/">
         
-          <span class="site-state-item-count">14</span>
+          <span class="site-state-item-count">15</span>
           <span class="site-state-item-name">posts</span>
         </a>
       </div>

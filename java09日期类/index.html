@@ -65,14 +65,14 @@
 <meta property="og:site_name" content="RudyWei&#39;s">
 <meta property="og:description" content="1、jdk8之前的日期、时间API计算世界时间的主要标准： UTC ： 世界标准时间， GMT：英国的格林威治时间，也是世界标准时间，本初子午线 CST：格林尼治时间 1.1 java.lang.System类 当前类提供currentTimeMillis（）方法来返回当前时间与1970年1月1号0分0秒之间的毫秒数之差，也称为时间戳。  示例代码： long millis = System.cu">
 <meta property="og:locale" content="en">
-<meta property="og:image" content="c:%5CUsers%5CAdministrator%5CAppData%5CRoaming%5CTypora%5Ctypora-user-images%5C1563760414344.png">
-<meta property="og:image" content="c:%5CUsers%5CAdministrator%5CAppData%5CRoaming%5CTypora%5Ctypora-user-images%5C1563760476211.png">
-<meta property="og:image" content="c:%5CUsers%5CAdministrator%5CAppData%5CRoaming%5CTypora%5Ctypora-user-images%5C1563763981321.png">
-<meta property="og:updated_time" content="2019-08-10T10:11:32.037Z">
+<meta property="og:image" content="https://theme-next.org/java09日期类/date1.png">
+<meta property="og:image" content="https://theme-next.org/java09日期类/date2.png">
+<meta property="og:image" content="https://theme-next.org/java09日期类/date3.png">
+<meta property="og:updated_time" content="2019-08-10T14:27:50.096Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="java09日期类">
 <meta name="twitter:description" content="1、jdk8之前的日期、时间API计算世界时间的主要标准： UTC ： 世界标准时间， GMT：英国的格林威治时间，也是世界标准时间，本初子午线 CST：格林尼治时间 1.1 java.lang.System类 当前类提供currentTimeMillis（）方法来返回当前时间与1970年1月1号0分0秒之间的毫秒数之差，也称为时间戳。  示例代码： long millis = System.cu">
-<meta name="twitter:image" content="c:%5CUsers%5CAdministrator%5CAppData%5CRoaming%5CTypora%5Ctypora-user-images%5C1563760414344.png">
+<meta name="twitter:image" content="https://theme-next.org/java09日期类/date1.png">
   <link rel="alternate" href="/atom.xml" title="RudyWei's" type="application/atom+xml">
   <link rel="canonical" href="https://theme-next.org/java09日期类/">
 
@@ -215,7 +215,7 @@
       
     
 
-    <a href="/archives/" rel="section"><i class="menu-item-icon fa fa-fw fa-archive"></i> <br/>Archives<span class="badge">14</span></a>
+    <a href="/archives/" rel="section"><i class="menu-item-icon fa fa-fw fa-archive"></i> <br/>Archives<span class="badge">15</span></a>
 
   </li>
         <li class="menu-item menu-item-search">
@@ -306,7 +306,7 @@
                 
               
 
-              <time title="Created: 2019-08-10 05:00:00 / Modified: 18:11:32" itemprop="dateCreated datePublished" datetime="2019-08-10T05:00:00+08:00">2019-08-10</time>
+              <time title="Created: 2019-08-10 05:00:00 / Modified: 22:27:50" itemprop="dateCreated datePublished" datetime="2019-08-10T05:00:00+08:00">2019-08-10</time>
             </span>
           
             
@@ -379,9 +379,9 @@
 <figure class="highlight java"><table><tr><td class="code"><pre><span class="line"><span class="keyword">long</span> millis = System.currentTimeMillis();</span><br><span class="line">System.out.println(millis); <span class="comment">//订单号会用到</span></span><br></pre></td></tr></table></figure>
 
 <h3 id="1-2-java-util-Date"><a href="#1-2-java-util-Date" class="headerlink" title="1.2 java.util.Date"></a>1.2 java.util.Date</h3><p>体系结构：</p>
-<p><img src="C:%5CUsers%5CAdministrator%5CAppData%5CRoaming%5CTypora%5Ctypora-user-images%5C1563760414344.png" alt="1563760414344"></p>
+<p><img src="date1.png" alt="1563760414344"></p>
 <p>注意两Date</p>
-<p><img src="C:%5CUsers%5CAdministrator%5CAppData%5CRoaming%5CTypora%5Ctypora-user-images%5C1563760476211.png" alt="1563760476211"></p>
+<p><img src="date2.png" alt="1563760476211"></p>
 <p><strong>java.util.Date</strong></p>
 <p> 考虑两个方法：</p>
 <pre><code>- 如何实例化
@@ -403,7 +403,7 @@
 
 <p>可以指定格式化方式：</p>
 <p>官网实例：</p>
-<p><img src="C:%5CUsers%5CAdministrator%5CAppData%5CRoaming%5CTypora%5Ctypora-user-images%5C1563763981321.png" alt="1563763981321"></p>
+<p><img src="date3.png" alt="1563763981321"></p>
 <p>示例代码：</p>
 <figure class="highlight java"><table><tr><td class="code"><pre><span class="line"><span class="comment">//使用指定格式进行格式化处理</span></span><br><span class="line"><span class="comment">//"yyyy-MM-dd'T'HH:mm:ss.SSSZ"</span></span><br><span class="line">SimpleDateFormat sdf = <span class="keyword">new</span> SimpleDateFormat(<span class="string">"yyyy-MM-dd'T'HH:mm:ss.SSSZ"</span>);</span><br><span class="line">sdf = <span class="keyword">new</span> SimpleDateFormat(<span class="string">"yyyy-MM-dd HH:mm:ss"</span>); <span class="comment">//考虑2019/07/22方式</span></span><br><span class="line"><span class="comment">//格式化 </span></span><br><span class="line">String str = sdf.format(<span class="keyword">new</span> Date());</span><br><span class="line">System.out.println(str);</span><br><span class="line"></span><br><span class="line"><span class="comment">//解析</span></span><br><span class="line">String sources = <span class="string">"2019-07-22 10:56:00"</span>;</span><br><span class="line">Date date = sdf.parse(sources);</span><br><span class="line">System.out.println(date);</span><br></pre></td></tr></table></figure>
 
@@ -575,7 +575,7 @@
         
           <a href="/archives/">
         
-          <span class="site-state-item-count">14</span>
+          <span class="site-state-item-count">15</span>
           <span class="site-state-item-name">posts</span>
         </a>
       </div>
