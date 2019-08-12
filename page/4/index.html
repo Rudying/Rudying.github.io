@@ -209,7 +209,7 @@
       
     
 
-    <a href="/archives/" rel="section"><i class="menu-item-icon fa fa-fw fa-archive"></i> <br/>归档<span class="badge">15</span></a>
+    <a href="/archives/" rel="section"><i class="menu-item-icon fa fa-fw fa-archive"></i> <br/>归档<span class="badge">17</span></a>
 
   </li>
         <li class="menu-item menu-item-search">
@@ -258,6 +258,410 @@
           <div id="content" class="content">
             
   <section id="posts" class="posts-expand">
+      
+
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="https://theme-next.org/java02基础/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="RudyWei">
+      <meta itemprop="description" content="“今天也要努力🦆”">
+      <meta itemprop="image" content="/images/timg.jpeg#avatar.gif">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="RudyWei's">
+    </span>
+      <header class="post-header">
+
+        
+          <h1 class="post-title" itemprop="name headline">
+                
+                
+                <a href="/java02基础/" class="post-title-link" itemprop="url">java02基础</a>
+              
+            
+          </h1>
+        
+
+        <div class="post-meta">
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">发表于</span>
+              
+
+              
+                
+              
+
+              <time title="创建时间：2019-08-10 01:01:02 / 修改时间：17:26:00" itemprop="dateCreated datePublished" datetime="2019-08-10T01:01:02+08:00">2019-08-10</time>
+            </span>
+          
+            
+
+            
+          
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">分类于</span>
+              
+              
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing"><a href="/categories/javase/" itemprop="url" rel="index"><span itemprop="name">javase</span></a></span>
+
+                
+                
+              
+            </span>
+          
+
+          
+            <span id="/java02基础/" class="post-meta-item leancloud_visitors" data-flag-title="java02基础">
+              <span class="post-meta-item-icon">
+                <i class="fa fa-eye"></i>
+              </span>
+              
+                <span class="post-meta-item-text">阅读次数：</span>
+              
+                <span class="leancloud-visitors-count"></span>
+            </span>
+          
+            
+  
+  <span class="post-meta-item">
+    
+    <span class="post-meta-item-icon">
+      <i class="fa fa-comment-o"></i>
+    </span>
+    
+      <span class="post-meta-item-text">评论数：</span>
+    
+  
+    <a href="/java02基础/#comments" itemprop="discussionUrl">
+      <span class="post-comments-count valine-comment-count" data-xid="/java02基础/" itemprop="commentCount"></span>
+    </a>
+  </span>
+  
+  
+          <br/>
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+          
+            <h3 id="方法"><a href="#方法" class="headerlink" title="方法"></a>方法</h3><ol>
+<li><p>定义：方法就是一段用来完成特定功能的代码片段，类似于其它语言的函数。方法用于定义该类或该类的实例的行为特征和功能实现。 方法是类和对象行为特征的抽象。方法很类似于面向过程中的函数。面向过程中，函数是最基本单位，整个程序由一个个函数调用组成。面向对象中，整个程序的基本单位是类，方法是从属于类和对象的。</p>
+<p>对象名.方法名(实参列表)<br>方法的详细说明</p>
+<ol>
+<li>形式参数：在方法声明时用于接收外界传入的数据。<br>实参：调用方法时实际传给方法的数据。</li>
+<li>返回值：方法在执行完毕后返还给调用它的环境的数据。</li>
+<li>返回值类型：事先约定的返回值的数据类型，如无返回值，必须显示指定为为void。</li>
+</ol>
+</li>
+</ol>
+<h3 id="数组"><a href="#数组" class="headerlink" title="数组"></a>数组</h3><ol>
+<li><p>声明一个数组：</p>
+<p>int a[];//指定数据类型</p>
+<p>int []a;</p>
+<p>int a[]=new int[4]//声明的同时分配空间</p>
+<p>int a[]=new int[]{1,6,4,10}//声明的同时分配空间并赋值</p>
+<p>int a[]={1,6,4,10}//声明的同时分配空间并赋值</p>
+</li>
+<li><p>二维数组</p>
+<ul>
+<li><p>声明</p>
+<figure class="highlight java"><table><tr><td class="code"><pre><span class="line"><span class="keyword">int</span> a [][]=&#123;&#123;<span class="number">1</span>,<span class="number">2</span>,<span class="number">3</span>&#125;,&#123;<span class="number">1</span>,<span class="number">2</span>,<span class="number">3</span>&#125;,&#123;<span class="number">1</span>,<span class="number">2</span>,<span class="number">3</span>&#125;&#125;</span><br><span class="line">a.length=<span class="number">3</span></span><br><span class="line"> a[<span class="number">0</span>]=&#123;<span class="number">1</span>,<span class="number">2</span>,<span class="number">3</span>&#125;</span><br><span class="line">a[<span class="number">0</span>].length=<span class="number">1</span></span><br></pre></td></tr></table></figure>
+
+</li>
+</ul>
+</li>
+</ol>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">   </span><br><span class="line">- 输出：</span><br><span class="line">   </span><br><span class="line">     ```java </span><br><span class="line">   int a[][]=new int [3] [];</span><br><span class="line">     a[0]=new int[3];</span><br><span class="line">  a[1]=new int[4];</span><br><span class="line">     a[2]=new int[2];</span><br><span class="line">     以上都属于开辟空间</span><br><span class="line">   赋值: a[0] [0]=1;</span><br></pre></td></tr></table></figure>
+
+<h3 id="进制转换"><a href="#进制转换" class="headerlink" title="进制转换"></a>进制转换</h3><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">二进制转十进制</span><br><span class="line">Integer.parseInt(&quot;0110&quot;, 2);</span><br><span class="line"></span><br><span class="line">八进制转十进制</span><br><span class="line">Integer.parseInt(&quot;17&quot;, 8);</span><br><span class="line"></span><br><span class="line">十六进制转十进制</span><br><span class="line">Integer.parseInt(&quot;17&quot;, 16);</span><br><span class="line"></span><br><span class="line">十进制转成二进制</span><br><span class="line">Integer.toBinaryString(int i);</span><br><span class="line"></span><br><span class="line">十进制转成八进制</span><br><span class="line">Integer.toOctalString(int i);</span><br><span class="line"></span><br><span class="line">十进制转成十六进制</span><br><span class="line">Integer.toHexString(int i);</span><br></pre></td></tr></table></figure>
+
+<h3 id="获取随机数"><a href="#获取随机数" class="headerlink" title="获取随机数"></a>获取随机数</h3><ol>
+<li>方法一<br>(数据类型)(最小值+Math.random()<em>(最大值-最小值+1))<br>例:<br>(int)(1+Math.random()</em>(10-1+1))<br>从1到10的int型随数</li>
+<li>方法二<br>获得随机数<br>for (int i=0;i&lt;30;i++)<br>{System.out.println((int)(1+Math.random()<em>10));}<br>(int)(1+Math.random()</em>10)<br>通过java.Math包的random方法得到1-10的int随机数<br>公式是:最小值---最大值（整数）的随机数<br>（类型）最小值+Math.random()*最大值</li>
+<li>方法三<br>Random ra =new Random();<br>for (int i=0;i&lt;30;i++)<br>{System.out.println(ra.nextInt(10)+1);}<br>通过java.util包中的Random类的nextInt方法来得到1-10的int随机数</li>
+</ol>
+
+          
+        
+      
+    </div>
+
+    
+    
+    
+
+    <footer class="post-footer">
+        <div class="post-eof"></div>
+    </footer>
+  </div>
+  
+  
+  
+  </article>
+
+    
+      
+
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="https://theme-next.org/java01基础/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="RudyWei">
+      <meta itemprop="description" content="“今天也要努力🦆”">
+      <meta itemprop="image" content="/images/timg.jpeg#avatar.gif">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="RudyWei's">
+    </span>
+      <header class="post-header">
+
+        
+          <h1 class="post-title" itemprop="name headline">
+                
+                
+                <a href="/java01基础/" class="post-title-link" itemprop="url">java01基础</a>
+              
+            
+          </h1>
+        
+
+        <div class="post-meta">
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">发表于</span>
+              
+
+              
+                
+              
+
+              <time title="创建时间：2019-08-10 01:01:01 / 修改时间：17:25:55" itemprop="dateCreated datePublished" datetime="2019-08-10T01:01:01+08:00">2019-08-10</time>
+            </span>
+          
+            
+
+            
+          
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">分类于</span>
+              
+              
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing"><a href="/categories/javase/" itemprop="url" rel="index"><span itemprop="name">javase</span></a></span>
+
+                
+                
+              
+            </span>
+          
+
+          
+            <span id="/java01基础/" class="post-meta-item leancloud_visitors" data-flag-title="java01基础">
+              <span class="post-meta-item-icon">
+                <i class="fa fa-eye"></i>
+              </span>
+              
+                <span class="post-meta-item-text">阅读次数：</span>
+              
+                <span class="leancloud-visitors-count"></span>
+            </span>
+          
+            
+  
+  <span class="post-meta-item">
+    
+    <span class="post-meta-item-icon">
+      <i class="fa fa-comment-o"></i>
+    </span>
+    
+      <span class="post-meta-item-text">评论数：</span>
+    
+  
+    <a href="/java01基础/#comments" itemprop="discussionUrl">
+      <span class="post-comments-count valine-comment-count" data-xid="/java01基础/" itemprop="commentCount"></span>
+    </a>
+  </span>
+  
+  
+          <br/>
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+          
+            <h2 id="java简介"><a href="#java简介" class="headerlink" title="java简介"></a>java简介</h2><ul>
+<li><p>界面：HTML CSS JAVASCRIPT JQUERY BOOTSTRAP VUE</p>
+</li>
+<li><p>服务器端技术：JAVA JAVAWEB 数据库（mysql oracle） </p>
+</li>
+<li><p>JAVA:在大家要开发的项目中是一种服务器端技术，完成业务逻辑的处理，比如验证用户名密码是否正确。</p>
+</li>
+<li><p>B/S :浏览器/服务器,一种项目结构</p>
+</li>
+<li><p>JAVA之父 JAMES GOSLING</p>
+</li>
+<li><p>HOTJAVA</p>
+</li>
+<li><p>根据开发项目类型JAVA 分为三种类型：</p>
+<p>JAVASE :标准版 桌面应用程序<br>JAVAEE :企业版 开发B/S结构的项目<br>JAVAME ：小型版 嵌入式 </p>
+</li>
+</ul>
+<h2 id="一般的高级语言的运行过程"><a href="#一般的高级语言的运行过程" class="headerlink" title="一般的高级语言的运行过程"></a>一般的高级语言的运行过程</h2><ul>
+<li>.c /.cpp 源代码————&gt;编译----&gt;.exe可执行程序（针对特定操作系统）</li>
+<li>.java-----&gt;编译-----&gt;.class(字节码文件，在操作系统不能直接运行，可以跨平台)------&gt;解释（不同平台有不同的解释器JVM Java虚拟机）----&gt;看到程序的运行结果</li>
+</ul>
+<h2 id="JVM：JAVA虚拟机"><a href="#JVM：JAVA虚拟机" class="headerlink" title="JVM：JAVA虚拟机"></a>JVM：JAVA虚拟机</h2><ul>
+<li>解释字节码程序</li>
+<li>管理Java程序在运行过程所占用的内存空间</li>
+<li>JRE：Java运行环境</li>
+<li>JRE（JVM是其一部分）</li>
+</ul>
+<h2 id="JDK：JAVA开发工具包"><a href="#JDK：JAVA开发工具包" class="headerlink" title="JDK：JAVA开发工具包"></a>JDK：JAVA开发工具包</h2><ol>
+<li>bin目录：存放可执行文件；</li>
+<li>ib目录：存放Java的类库文件；</li>
+<li>include目录：存放用于本地方法的文件；</li>
+<li>demo目录：存放演示程序；</li>
+<li>jre目录：存放Java运行环境文件；</li>
+</ol>
+<h2 id="学会使用Java-API文档"><a href="#学会使用Java-API文档" class="headerlink" title="学会使用Java API文档"></a>学会使用Java API文档</h2><ul>
+<li>Java中已经定义好的类、接口数不胜数，不可能完完全全把这些类及其这些类的方法记住。但API文档能够帮助解决这样的问题。在学习Java的过程中和别人交流是很重要的，有助于提高自己的技术知识。</li>
+<li>Java API文档是一种非常有用的文档，描述许多Java的内置功能，其中包含类、包、接口等帮助。</li>
+</ul>
+<h2 id="Java数据结构"><a href="#Java数据结构" class="headerlink" title="Java数据结构"></a>Java数据结构</h2><ul>
+<li><p>标识符命名规则：</p>
+<p>1.类名称（首字母大写）<br>2.方法名称<br>3.变量名称（一般首字母小写）字母、_、$ 双单词采用驼峰法</p>
+</li>
+</ul>
+<h2 id="八种基本数据类型"><a href="#八种基本数据类型" class="headerlink" title="八种基本数据类型"></a>八种基本数据类型</h2><ul>
+<li><p>整数型：<br>byte（1字节）-128〜127</p>
+<p>short（2）   -2^15〜2^15-1 -32768〜32767</p>
+<p>int（4）      21 4748 3647//java中任何整数默认int型</p>
+<p>long（8字节） //d=214748xxxl 超过int型最大值要加l</p>
+</li>
+<li><p>浮点型：<br>float e=3.14f （4字节）  //浮点数不能做精确运算</p>
+<p>double f=3.14 （8字节）</p>
+</li>
+<li><p>字符型：<br>char j=&#39;中&#39;; （2字节）0〜65536//单引号只能且放一个字符（没有符号位）可以表示一个汉字</p>
+</li>
+<li><p>波尔型：<br>Boolean（1字节） //变量能表示ture false</p>
+</li>
+</ul>
+<p><strong>字符串</strong>数据类型：<br>    不属于8种基本类型例如 String s=&quot;abc&quot; abc是字符串 s.length=3</p>
+<h2 id="数据类型转换"><a href="#数据类型转换" class="headerlink" title="数据类型转换"></a>数据类型转换</h2><ul>
+<li><p>强制类型转换<br>大数据向小数据放  // short d=128;  错误方式<br>小数向整数放          //byte  c=(byte)d;正确方式<br>转换过程中都可能发生精度损失，因为转换过程中采用的原理是高位截断，   剩下的位数可能表示的数字跟原来就不一致了。</p>
+<pre><code>short s=1;
+s+=1; //等价于 s=(short)(s+1) 需要强制转换</code></pre></li>
+<li><p>精度损失：<br>以下情况可能会发生精度损失，因为等号右边按照Int型运算，不够存放算术运算结果<br>//        long a=24<em>24</em>60<em>1000</em>1000;<br>//        long a=24<em>24</em>60<em>1000</em>1000l;</p>
+</li>
+<li><p>自动提升转换</p>
+<p>1.可以将一个char型变量赋值给int型或者long型，不能byte和short<br>2.不能将一个整型的变量赋值给char<br>3.可以将一个整型的字面量赋值给char (0-65535)<br>a+1&lt;a 在高位截短的情况下可能发生<br>4.常量 只能赋一次值<br> 例：final int a=10;</p>
+</li>
+</ul>
+<h2 id="运算符"><a href="#运算符" class="headerlink" title="运算符"></a>运算符</h2><ol>
+<li>算数运算符<br>%取余<br>++自加 // <strong>a++先参与后自加 ++a先自加后参与</strong><br>--自减</li>
+<li>关系运算符<br>&lt; &gt; &lt;= &gt;= == !=</li>
+<li>逻辑运算符<br>&amp;&amp;  与  (&quot;A&amp;&amp;B&quot; A部分为false则B部分不执行输出false)<br>||  或(&quot;A||B&quot; A部分为ture则B部分不执行输出ture)<br>!（op1） 非（一元运算符 包括++ --）<br>&amp; 、|(也是逻辑与和逻辑或，不存在短路效应)</li>
+<li>位运算符<br>位运算符用来对二进制数进行测试、置位或移位等操作，操作数只能为整型或字符型数据<br>〜a //按位取反<br>a&amp;b<br>a|b<br>a^b<br>a&gt;&gt;2   A左移2位<br>A&lt;&lt;2   A右移2位<br>A &gt;&gt;&gt;3 A无符号右移3位<br>（注意 赋值运算符 =和条件运算符max=a&gt;b?a:b;）<br>注意：0b10 表示十进制2<br>   010 表示十进制8<br>   0x10 表示十进制16</li>
+</ol>
+<h2 id="Java控制语句"><a href="#Java控制语句" class="headerlink" title="Java控制语句"></a>Java控制语句</h2><ul>
+<li><p>多重if 结构</p>
+<p>判断某个数是否落在某个区间</p>
+</li>
+</ul>
+<figure class="highlight java"><table><tr><td class="code"><pre><span class="line"><span class="function"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">void</span> <span class="title">main</span><span class="params">(String[] args)</span> </span>&#123;</span><br><span class="line">    Scanner sc = <span class="keyword">new</span> Scanner(System.in); <span class="comment">// 从控制台输入</span></span><br><span class="line">    <span class="keyword">int</span> jf = sc.nextInt();</span><br><span class="line">    <span class="keyword">if</span> (jf &lt; <span class="number">2000</span>)</span><br><span class="line">        System.out.println(<span class="string">"0.9折"</span>);</span><br><span class="line">    <span class="keyword">else</span> <span class="keyword">if</span> (jf &gt;= <span class="number">2000</span> &amp;&amp; jf &lt; <span class="number">4000</span>)</span><br><span class="line">        System.out.println(<span class="string">"0.8折"</span>);</span><br><span class="line">    <span class="keyword">else</span> <span class="keyword">if</span> (jf &gt;= <span class="number">4000</span> &amp;&amp; jf &lt; <span class="number">8000</span>)</span><br><span class="line">        System.out.println(<span class="string">"0.7折"</span>);</span><br><span class="line">    <span class="keyword">else</span></span><br><span class="line">        System.out.println(<span class="string">"0.6折"</span>);</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<ul>
+<li>Switch</li>
+</ul>
+<figure class="highlight java"><table><tr><td class="code"><pre><span class="line">Switch（表达式）&#123;</span><br><span class="line">	<span class="keyword">case</span> 常量<span class="number">1</span>:</span><br><span class="line">   	  语句<span class="comment">//</span></span><br><span class="line">          <span class="keyword">break</span>；</span><br><span class="line">	<span class="keyword">case</span> 常量<span class="number">2</span>:</span><br><span class="line">  	  语句<span class="comment">//</span></span><br><span class="line">   	  <span class="keyword">break</span>；</span><br><span class="line">	<span class="keyword">default</span>:</span><br><span class="line">	   语句<span class="comment">//</span></span><br></pre></td></tr></table></figure>
+
+<ul>
+<li><p>while</p>
+<p>while(布尔ture/false表达式) //循环条件，只要表达式为ture就一直执行下去</p>
+<p>   while(answer.equals(&quot;y&quot;)){</p>
+<pre><code>  syso(&quot;早上。。中午。。晚上。。&quot;)；
+  syso(&quot;表演的怎么样？请回答（y/n）:&quot;);
+  answer=input.next(); //循环输入回答
+}</code></pre><p>   syso(&quot;圆满完成！&quot;)//只有当回答是y 时才跳出循环</p>
+</li>
+<li><p>循环结构do while</p>
+</li>
+</ul>
+<figure class="highlight java"><table><tr><td class="code"><pre><span class="line"><span class="keyword">do</span>&#123;</span><br><span class="line">循环操作                        <span class="comment">//至少执行一次操作</span></span><br><span class="line">&#125;<span class="keyword">while</span>(布尔ture/<span class="keyword">false</span>表达式)；  <span class="comment">//循环条件，只要表达式为ture就一直执行</span></span><br></pre></td></tr></table></figure>
+
+<ul>
+<li>for循环</li>
+</ul>
+<figure class="highlight java"><table><tr><td class="code"><pre><span class="line">   初始化；布尔表达式；更新</span><br><span class="line"> <span class="keyword">for</span>  (<span class="keyword">int</span>=<span class="number">0</span>;   i&lt;<span class="number">100</span>;   i++)&#123;</span><br><span class="line">    sysyo(<span class="string">"我最棒"</span>)；<span class="comment">//循环体</span></span><br><span class="line">&#125;</span><br><span class="line"><span class="keyword">for</span>（；；）&#123;</span><br><span class="line"> <span class="keyword">if</span>（布尔表达式）&#123;</span><br><span class="line">  <span class="keyword">break</span>/<span class="keyword">continue</span>；</span><br><span class="line"> &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<ol>
+<li>最先执行初始化。可以声明一种类型，但可以初始化一个或多个循环控制变量，也可以是空语句。</li>
+<li>然后检测布尔表达式。ture循环体被执行，false循环体终止，开始执行循环体后面的语句。</li>
+<li>执行一次循环后，更新循环控制变量。</li>
+<li>再次检测布尔表达式。执行上面的过程。</li>
+</ol>
+<ul>
+<li>嵌套for循环</li>
+</ul>
+<figure class="highlight java"><table><tr><td class="code"><pre><span class="line"><span class="function"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">void</span> <span class="title">lest2</span><span class="params">()</span></span>&#123;</span><br><span class="line">   Scanner sc=<span class="keyword">new</span> Scanner(System.in);</span><br><span class="line">   System.out.println(<span class="string">"请输入行数n"</span>);</span><br><span class="line">   <span class="keyword">int</span> n=sc.nextInt();</span><br><span class="line">   <span class="keyword">for</span> (<span class="keyword">int</span> i = <span class="number">0</span>; i &lt;n; i++) &#123;</span><br><span class="line">	<span class="keyword">for</span> (<span class="keyword">int</span> j = <span class="number">0</span>; j &lt; n-i-<span class="number">1</span>; j++) &#123;</span><br><span class="line">    		System.out.print(<span class="string">" "</span>);  <span class="comment">// 不加ln默认不换行！！</span></span><br><span class="line">	&#125;</span><br><span class="line">	<span class="keyword">for</span> (<span class="keyword">int</span> j = <span class="number">0</span>; j &lt; <span class="number">2</span>*i+<span class="number">1</span>;j++) &#123;</span><br><span class="line">		System.out.print(<span class="string">"*"</span>);</span><br><span class="line">	&#125;</span><br><span class="line">	System.out.println(<span class="string">""</span>);</span><br><span class="line">   &#125;</span><br><span class="line"> &#125;</span><br></pre></td></tr></table></figure>
+
+
+          
+        
+      
+    </div>
+
+    
+    
+    
+
+    <footer class="post-footer">
+        <div class="post-eof"></div>
+    </footer>
+  </div>
+  
+  
+  
+  </article>
+
+    
       
 
   <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
@@ -611,194 +1015,11 @@
   </article>
 
     
-      
-
-  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
-  
-  
-  
-  <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="https://theme-next.org/处女篇/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="name" content="RudyWei">
-      <meta itemprop="description" content="“今天也要努力🦆”">
-      <meta itemprop="image" content="/images/timg.jpeg#avatar.gif">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="RudyWei's">
-    </span>
-      <header class="post-header">
-
-        
-          <h1 class="post-title" itemprop="name headline">
-                
-                
-                <a href="/处女篇/" class="post-title-link" itemprop="url">处女篇</a>
-              
-            
-          </h1>
-        
-
-        <div class="post-meta">
-            <span class="post-meta-item">
-              <span class="post-meta-item-icon">
-                <i class="fa fa-calendar-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">发表于</span>
-              
-
-              
-                
-              
-
-              <time title="创建时间：2019-07-28 03:00:19" itemprop="dateCreated datePublished" datetime="2019-07-28T03:00:19+08:00">2019-07-28</time>
-            </span>
-          
-            
-
-            
-              <span class="post-meta-item">
-                <span class="post-meta-item-icon">
-                  <i class="fa fa-calendar-check-o"></i>
-                </span>
-                
-                  <span class="post-meta-item-text">更新于</span>
-                
-                <time title="修改时间：2019-08-01 02:09:01" itemprop="dateModified" datetime="2019-08-01T02:09:01+08:00">2019-08-01</time>
-              </span>
-            
-          
-            <span class="post-meta-item">
-              <span class="post-meta-item-icon">
-                <i class="fa fa-folder-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">分类于</span>
-              
-              
-                <span itemprop="about" itemscope itemtype="http://schema.org/Thing"><a href="/categories/人生感悟/" itemprop="url" rel="index"><span itemprop="name">人生感悟</span></a></span>
-
-                
-                
-              
-            </span>
-          
-
-          
-            <span id="/处女篇/" class="post-meta-item leancloud_visitors" data-flag-title="处女篇">
-              <span class="post-meta-item-icon">
-                <i class="fa fa-eye"></i>
-              </span>
-              
-                <span class="post-meta-item-text">阅读次数：</span>
-              
-                <span class="leancloud-visitors-count"></span>
-            </span>
-          
-            
-  
-  <span class="post-meta-item">
-    
-    <span class="post-meta-item-icon">
-      <i class="fa fa-comment-o"></i>
-    </span>
-    
-      <span class="post-meta-item-text">评论数：</span>
-    
-  
-    <a href="/处女篇/#comments" itemprop="discussionUrl">
-      <span class="post-comments-count valine-comment-count" data-xid="/处女篇/" itemprop="commentCount"></span>
-    </a>
-  </span>
-  
-  
-          <br/>
-
-        </div>
-      </header>
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-
-      
-          
-            <blockquote class="blockquote-center"><p>养成写博客的习惯</p>
-<p> 这将使你的人生变的非常有意义！</p>
-</blockquote>
-
-<h2 id="❓-为什么创建个人博客"><a href="#❓-为什么创建个人博客" class="headerlink" title="❓ 为什么创建个人博客"></a>❓ 为什么创建个人博客</h2><p>Record：</p>
-<ul>
-<li>记录下自己的学习过程及心得</li>
-<li>记录让人自律，自律让人自信</li>
-<li>记录是对自己努力的一种认可</li>
-</ul>
-<p>Share：</p>
-<ul>
-<li>一名优秀的程序员必将具备开源精神</li>
-<li>个人的工作与学习过程遇到过很多问题也是通过search blogs 解决的</li>
-<li>个人经历与经验分享给朋友未尝不是一件美事</li>
-</ul>
-<p>Exchange：</p>
-<ul>
-<li>My blogs should 具有讨论价值</li>
-<li>文章应该具有思辨性</li>
-<li>认识更多的小伙伴</li>
-<li>交流中成长</li>
-</ul>
-<p>Freedom：</p>
-<ul>
-<li>远离鱼龙混杂的广告</li>
-<li>浩瀚重复的blog资源</li>
-<li>静下心回归写作本身</li>
-<li>选择性汲取精华blog</li>
-</ul>
-<h2 id="🛠-怎样搭建个人博客"><a href="#🛠-怎样搭建个人博客" class="headerlink" title="🛠 怎样搭建个人博客"></a>🛠 怎样搭建个人博客</h2><ul>
-<li>首先你需要一个GitHub账号</li>
-<li>你需要在电脑安装git并且你需要熟悉一些DOS命令</li>
-<li>在DOS窗口安装Hexo并使用NexT主题</li>
-<li><a href="https://smartbeng.github.io/2017/03/26/blogFinish/" target="_blank" rel="noopener">最适合新手的 GitHub + Hexo 「大话」博客搭建教程</a></li>
-<li><a href="https://hexo.io/zh-cn/" target="_blank" rel="noopener">Hexo 官网</a>：https://hexo.io/zh-cn/ 部署博客</li>
-<li><a href="http://theme-next.iissnan.com/" target="_blank" rel="noopener">NexT 主题官网</a>：http://theme-next.iissnan.com/ 美化博客</li>
-</ul>
-<h2 id="✍🏻-如何经营个人博客"><a href="#✍🏻-如何经营个人博客" class="headerlink" title="✍🏻 如何经营个人博客"></a>✍🏻 如何经营个人博客</h2><ul>
-<li>文章质量决定文章高度</li>
-<li>简洁轻快的博客UI</li>
-<li>优秀的用户体验</li>
-<li>版权意识与推广意识</li>
-</ul>
-<hr>
-<p>本文为原创内容，转载请注明出处，感谢您的阅读🙏</p>
-<hr>
-
-          
-        
-      
-    </div>
-
-    
-    
-    
-
-    <footer class="post-footer">
-        <div class="post-eof"></div>
-    </footer>
-  </div>
-  
-  
-  
-  </article>
-
-    
   </section>
 
   
   <nav class="pagination">
-    <a class="extend prev" rel="prev" href="/page/3/"><i class="fa fa-angle-left" aria-label="上一页"></i></a><a class="page-number" href="/">1</a><span class="space">&hellip;</span><a class="page-number" href="/page/3/">3</a><span class="page-number current">4</span>
+    <a class="extend prev" rel="prev" href="/page/3/"><i class="fa fa-angle-left" aria-label="上一页"></i></a><a class="page-number" href="/">1</a><span class="space">&hellip;</span><a class="page-number" href="/page/3/">3</a><span class="page-number current">4</span><a class="page-number" href="/page/5/">5</a><a class="extend next" rel="next" href="/page/5/"><i class="fa fa-angle-right" aria-label="下一页"></i></a>
   </nav>
 
 
@@ -834,7 +1055,7 @@
         
           <a href="/archives/">
         
-          <span class="site-state-item-count">15</span>
+          <span class="site-state-item-count">17</span>
           <span class="site-state-item-name">日志</span>
         </a>
       </div>

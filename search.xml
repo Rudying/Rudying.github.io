@@ -1,6 +1,16 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
+    <title><![CDATA[JavaSE思维导图]]></title>
+    <url>%2FJavaSE%E6%80%9D%E7%BB%B4%E5%AF%BC%E5%9B%BE%2F</url>
+    <content type="text"></content>
+  </entry>
+  <entry>
+    <title><![CDATA[MySQL思维导图]]></title>
+    <url>%2FMySQL%E6%80%9D%E7%BB%B4%E5%AF%BC%E5%9B%BE%2F</url>
+    <content type="text"><![CDATA[第二种 第三种]]></content>
+  </entry>
+  <entry>
     <title><![CDATA[java学习网站]]></title>
     <url>%2Fjava%E5%AD%A6%E4%B9%A0%E7%BD%91%E7%AB%99%2F</url>
     <content type="text"><![CDATA[java 学习网站速学堂 廖雪峰 菜鸟教程 其他GitHub中文帮助文档 jdk1.8中文版 UML图学习]]></content>
